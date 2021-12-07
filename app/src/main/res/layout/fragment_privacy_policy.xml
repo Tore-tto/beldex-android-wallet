@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beldex Wallet"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/tvCredits"
+            style="@style/MoneroText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_top"
+            android:autoLink="web"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="@string/privacy_policy"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

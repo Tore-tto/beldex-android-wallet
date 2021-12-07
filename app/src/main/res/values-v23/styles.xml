@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/greenColor</item>  <!-- Button BackgroundColor-->
+        <item name="colorPrimaryVariant">@color/monerujoPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/monerujoBackground</item> <!-- Button TextColor-->
+        <item name="colorSecondary">@color/blueColor</item>
+        <item name="colorSecondaryVariant">@color/monerujoPrimary</item>
+        <item name="colorOnSecondary">@color/monerujoBackground</item>
+        <item name="colorError">@color/monerujoOrange</item>
+        <item name="colorOnError">@color/monerujoPrimary</item>
+        <item name="colorSurface">@color/backgroundColor</item>
+        <item name="colorOnSurface">@color/textColor</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/monerujoE</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="android:textColorSecondary">@color/textColor</item>
+
+        <item name="android:statusBarColor">@color/gradientTop</item>
+
+        <item name="materialCardViewStyle">@style/AppCard</item>
+        <item name="materialButtonStyle">@style/AppButton</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimaryDark">@color/backgroundColor</item>
+    </style>
+</resources>

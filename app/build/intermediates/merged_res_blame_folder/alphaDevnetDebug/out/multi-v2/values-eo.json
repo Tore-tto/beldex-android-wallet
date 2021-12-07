@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Blockhash\\StudioProjects\\repository_beldex_android_wallet\\app\\build\\intermediates\\incremental\\mergeAlphaDevnetDebugResources\\merged.dir\\values-eo\\values-eo.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Blockhash\\StudioProjects\\repository_beldex_android_wallet\\app\\src\\main\\res\\values-eo\\help.xml",
+                    "from": {
+                        "startLines": "47,33,2,21,59,71,115,259,308,172,151,237,211",
+                        "startColumns": "2,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2846,2003,57,1234,3653,4462,7086,14959,18075,9755,8755,13538,11969",
+                        "endLines": "57,44,19,31,69,113,149,304,308,209,170,257,235",
+                        "endColumns": "16,16,16,16,16,16,16,16,43,16,16,16,16",
+                        "endOffsets": "3645,2838,1226,1995,4454,7078,8747,18063,18114,11961,9747,14951,13530"
+                    },
+                    "to": {
+                        "startLines": "14,25,37,55,66,77,120,155,201,202,240,260,281",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "637,1431,2260,3417,4173,4969,7548,9180,12244,12288,14462,15440,16838",
+                        "endLines": "24,36,54,65,76,119,154,200,201,239,259,280,305",
+                        "endColumns": "16,16,16,16,16,16,16,16,43,16,16,16,16",
+                        "endOffsets": "1426,2255,3412,4168,4964,7543,9175,12239,12283,14457,15435,16833,18375"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Blockhash\\StudioProjects\\repository_beldex_android_wallet\\app\\src\\main\\res\\values-eo\\about.xml",
+                    "from": {
+                        "startLines": "2,4,3,6,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "122,244,169,309,628",
+                        "endLines": "2,4,3,13,15",
+                        "endColumns": "45,61,73,20,90",
+                        "endOffsets": "163,301,238,620,714"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,13",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,101,163,237,546",
+                        "endLines": "2,3,4,12,13",
+                        "endColumns": "45,61,73,20,90",
+                        "endOffsets": "96,158,232,541,632"
+                    }
+                }
+            ]
+        }
+    ]
+}

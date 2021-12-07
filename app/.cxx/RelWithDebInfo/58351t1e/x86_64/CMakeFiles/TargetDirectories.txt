@@ -1,0 +1,3 @@
+C:/Users/Blockhash/StudioProjects/beldex_android_wallet/app/.cxx/RelWithDebInfo/58351t1e/x86_64/CMakeFiles/monerujo.dir
+C:/Users/Blockhash/StudioProjects/beldex_android_wallet/app/.cxx/RelWithDebInfo/58351t1e/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Blockhash/StudioProjects/beldex_android_wallet/app/.cxx/RelWithDebInfo/58351t1e/x86_64/CMakeFiles/rebuild_cache.dir

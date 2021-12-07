@@ -1,0 +1,25 @@
+                    Executable : C:\Users\Blockhash\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HC:\Users\Blockhash\StudioProjects\beldex_android_wallet\app
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=C:\Users\Blockhash\AppData\Local\Android\Sdk\ndk\17.2.4988734
+-DCMAKE_ANDROID_NDK=C:\Users\Blockhash\AppData\Local\Android\Sdk\ndk\17.2.4988734
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\Blockhash\AppData\Local\Android\Sdk\ndk\17.2.4988734\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\Blockhash\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_CXX_FLAGS=-std=c++11
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\Blockhash\StudioProjects\beldex_android_wallet\app\build\intermediates\cxx\RelWithDebInfo\58351t1e\obj\armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\Users\Blockhash\StudioProjects\beldex_android_wallet\app\build\intermediates\cxx\RelWithDebInfo\58351t1e\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-BC:\Users\Blockhash\StudioProjects\beldex_android_wallet\app\.cxx\RelWithDebInfo\58351t1e\armeabi-v7a
+-GNinja
+-DANDROID_STL=c++_shared
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

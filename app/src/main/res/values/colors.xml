@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="gradientBottom">#1C1C26</color>
+    <color name="gradientTop">#1C1C26</color>
+    <color name="backgroundColor">#1C1C26</color>
+    <color name="textColor">#ffffff</color>
+    <color name="cardBackgroundColor">#282A33</color>
+    <color name="blueColor">#048BF1</color>
+    <color name="greenColor">#2EA021</color>
+    <color name="redColor">#ff0000</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true" >@color/textColor</color>
+
+    <color name="gradientLeft">@color/monerujoOrange</color>
+    <color name="gradientRight">@color/monerujoPink</color>
+
+    <color name="monerujoToolbarText">@color/monerujoBackground</color>
+
+    <color name="monerujoBackground">#FFF6EF</color>
+    <color name="monerujoPrimary">#048BF1</color>
+    <color name="monerujoPrimaryVariant">#CCC3BD</color>
+    <color name="monerujoOrange">#FA5544</color>
+    <color name="monerujoGreen">#00C691</color>
+    <color name="monerujoPink">#F0006B</color>
+    <color name="monerujoPinkAlpha">#20F0006B</color>
+    <color name="monerujoE">@color/backgroundColor</color>
+
+    <color name="monerujoReceive">@color/greenColor</color>
+    <color name="monerujoGive">@color/monerujoOrange</color>
+    <color name="moneroStreetA">#D81F0759</color>
+    <color name="moneroStreetB">#D819001E</color>
+
+    <color name="wifi">@color/textColor</color>
+    <color name="progress_circle">@color/textColor</color>
+
+    <color name="tx_failed">@color/monerujoPrimaryVariant</color>
+    <color name="tx_pending">@color/monerujoPrimaryVariant</color>
+    <color name="tx_plus">@color/greenColor</color>
+    <color name="tx_minus">@color/monerujoOrange</color>
+
+    <color name="monerujoBlue">#1f4e97</color>
+
+</resources>

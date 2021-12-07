@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "MERGED_MANIFESTS",
+    "kind": "Directory"
+  },
+  "applicationId": "com.beldex.beldex_bdx_wallet",
+  "variantName": "alphaDevnetDebug",
+  "elements": [
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 7,
+      "versionName": "1.0.2 \u0027Feng Huang\u0027",
+      "outputFile": "x86_64/AndroidManifest.xml"
+    }
+  ],
+  "elementType": "File"
+}

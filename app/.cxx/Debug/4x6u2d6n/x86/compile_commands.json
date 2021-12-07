@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Blockhash/StudioProjects/repository_beldex_android_wallet/app/.cxx/Debug/4x6u2d6n/x86",
+  "command": "C:\\Users\\Blockhash\\AppData\\Local\\Android\\Sdk\\ndk\\17.2.4988734\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android --gcc-toolchain=C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/sysroot  -Dmonerujo_EXPORTS -I../../../../../external-libs/monero/include -isystem C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/include -isystem C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/sources/android/support/include -isystem C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++abi/include  -isystem C:/Users/Blockhash/AppData/Local/Android/Sdk/ndk/17.2.4988734/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\monerujo.dir\\src\\main\\cpp\\monerujo.cpp.o -c C:\\Users\\Blockhash\\StudioProjects\\repository_beldex_android_wallet\\app\\src\\main\\cpp\\monerujo.cpp",
+  "file": "C:/Users/Blockhash/StudioProjects/repository_beldex_android_wallet/app/src/main/cpp/monerujo.cpp"
+}
+]

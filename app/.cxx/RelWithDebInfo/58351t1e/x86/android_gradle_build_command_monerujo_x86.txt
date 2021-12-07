@@ -1,0 +1,7 @@
+Executable : C:\Users\Blockhash\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\Users\Blockhash\StudioProjects\beldex_android_wallet\app\.cxx\RelWithDebInfo\58351t1e\x86
+monerujo
+jvmArgs : 
+

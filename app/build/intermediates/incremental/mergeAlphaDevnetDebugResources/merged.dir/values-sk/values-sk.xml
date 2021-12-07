@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nové upozornenie</item>
+    <item quantity="few">%d nové upozornenia</item>
+    <item quantity="many">%d new notifications</item>
+    <item quantity="other">%d nových upozornení</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Prejsť na plochu"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Prejsť nahor"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Ďalšie možnosti"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Hotovo"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Zobraziť všetky"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Vybrať aplikáciu"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"VYP."</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ZAP."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"odstrániť"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"medzerník"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Vyhľadať…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Vymazať dopyt"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Vyhľadávací dopyt"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Hľadať"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Odoslať dopyt"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Hlasové vyhľadávanie"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Zdieľať s"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Zdieľať s aplikáciou <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Zbaliť"</string>
+    <string name="about_close">Zatvoriť</string>
+    <string name="about_version">Verzia %1$s (%2$d)</string>
+    <string name="about_whoami">ja som beldex</string>
+    <string name="bottomsheet_action_expand_halfway">Rozbaliť napoly</string>
+    <string name="character_counter_content_description">Zadané znaky: %1$d z %2$d</string>
+    <string name="character_counter_overflowed_content_description">Bol prekročený povolený počet znakov (%1$d z %2$d)</string>
+    <string name="clear_text_end_icon_content_description">Vymazať text</string>
+    <string name="credits_text" translatable="false"><![CDATA[
+        <b>Credits</b>
+        <br/>
+         m2049r, baltsar777, anhdres, keejef,
+        rehrar, EarlOfEgo, ErCiccione et al, sanada08, scilicet64 .
+        <br/><br/>
+        <a href="https://www.beldex.io/">beldex.io</a>
+        ]]></string>
+    <string name="error_icon_content_description">Chyba</string>
+    <string name="exposed_dropdown_menu_content_description">Zobraziť rozbaľovaciu ponuku</string>
+    <string name="help_create_keys"><![CDATA[
+        <h1>Vytvoriť Peňaženku - Kľúče</h1>
+        <p>Ak obnovuješ svoju peňaženku pomocou kľúčov!</p>
+        <p>Vlož unikátny názov a heslo peňaženky. 
+		Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
+		Používaj silné heslo - alebo ešte lepšie je použiť frázu.<p>
+		<p>Vlož svoju Monero adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\" and  \"Platobný Kľúč\".</p>
+        <p>Ak poznáš číslo bloku svojej prvej transakcie pre túto adresu, vlož ho do poľa \"Obnov Výšku\" - zanechaním prázdneho poľa budeš skenovať <em>celú</em> blockchain,
+		aby si našiel transakcie prislúchajúce tejto adrese. To môže trvať <em>veľmi</em> dlho.</p>
+		<p>Vlož sem číslo bloku prvej transakcie pre túto adresu do políčka \"Obnov Výšku\". Môžeš tiež použiť dátum vo formáte YYYY-MM-DD. 
+		Ak to nevieš naisto, vlož približný dátum/číslo bloku <em>pred</em> tým ako si prvýkrát použil danú adresu.</p>	
+    ]]></string>
+    <string name="help_create_ledger"><![CDATA[
+        <h1>Vytvoriť Peňaženku - Ledger</h1>
+        <p>Obnovenie peňaženky zo zariadenia Ledger Nano S.</p>
+        <p>Tvoj tajný kľúč nikdy neunikne zo zariadenia Ledger, takže budeš musieť mať Ledger pripojený vždy, keď budeš chcieť pristupovať k svojej peňaženke.</p>
+        <p>Vlož unikátny názov a heslo peňaženky.  Heslo je určené na zabezpečenie dát peňaženky na Android zariadení.  
+        Používaj silné heslo - alebo ešte lepšie je použiť frázu.<p>
+        <p>Do políčka \"Obnov Výšku\" vlož číslo bloku prvej transakcie pre túto adresu . Môžeš tiež použiť dátum vo formáte YYYY-MM-DD. 
+		Ak to nevieš presne, vlož približný dátum/číslo bloku <em>pred</em> tým ako si prvýkrát použil danú adresu. Urýchli to prehľadávanie blockchain.</p>	
+    ]]></string>
+    <string name="help_create_new"><![CDATA[
+        <h1>Vytvoriť Peňaženku - Novú</h1>
+        <p>Ak Ti treba novú Monero adresu!</p>
+        <p>Vlož unikátny názov a heslo peňaženky.
+        Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
+		Používaj silné heslo - alebo ešte lepšie je použiť frázu.</p>
+        <h2>Zapíš si mnemotechnický Seed!</h2>
+        <p>Na nasledujúcej obrazovke uvidíš svoj 25-slovný \"Mnemotechnický Seed\".
+        Sú to dáta potrebné na obnovenie peňaženky a získanie prístupu k Tvojim prostriedkom.
+		Bezpečné uloženie a utajenie týchto dát je veľmi dôležité, keďže pomocou nich <em>hocikto</em> môže získať kontrolu nad vašimi XMR!</p>
+        <p>Ak stratíš heslo do peňaženky, ešte stále si môžeš obnoviť peňaženku so svojím mnemotechnickým Seedom.</p>
+        <p>Ak stratíš mnemotechnický Seed, neexistuje spôsob ako ho odvodiť a všetky Tvoje mince sú navždy stratené!
+        Tento Seed sa nikdy nemôže zmeniť a v prípade, že je ukradnutý, alebo inak skompromitovaný, budeš musieť presunúť svoje mince do novej peňaženky (s novým mnemotechnickým Seedom).
+		Preto je najlepšie ak si svoj Seed zálohuješ zapísaním na papier a uložíš na <em>niekoľko</em> bezpečných a utajených miest.</p>
+    ]]></string>
+    <string name="help_create_seed"><![CDATA[
+        <h1>Vytvoriť Peňaženku - Seed</h1>
+        <p>Ak už máš Monero adresu a chceš obnoviť transakcie z blockchain!</p>
+        <p>Vlož unikátny názov a heslo peňaženky. 
+		Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
+		Používaj silné heslo - alebo ešte lepšie je použiť frázu.</p>
+        <p>Vlož svoj Seed do políčka \"Mnemotechnický Seed\".<p>
+        <p>Ak poznáš číslo bloku svojej prvej transakcie pre túto adresu, vlož ho do poľa \"Obnov Výšku\" - zanechaním prázdneho poľa budeš skenovať <em>celú</em> blockchain,
+		aby si našiel transakcie prislúchajúce tejto adrese. To môže trvať <em>veľmi</em> dlho.</p>
+    ]]></string>
+    <string name="help_create_view"><![CDATA[
+        <h1>Vytvoriť Peňaženku - Prezeracia Peňaženka</h1>
+        <p>Ak chceš iba sledovať prichádzajúce transakcie!</p>
+        <p>Vlož unikátny názov a heslo peňaženky. Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
+        Používaj silné heslo - alebo ešte lepšie je použiť frázu.<p>
+        <p>Vlož svoju Monero adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\".</p>
+        <p>Ak poznáš číslo bloku svojej prvej transakcie pre túto adresu, vlož ho do poľa \"Obnov Výšku\". Môžeš tiež použiť dátum vo formáte YYYY-MM-DD. 
+		Ak to nevieš naisto, vlož približný dátum/číslo bloku <em>pred</em> tým ako si prvýkrát použil danú adresu.
+		Zanechaním prázdneho poľa budeš skenovať <em>celú</em> blockchain, aby si našiel transakcie prislúchajúce tejto adrese. To môže trvať <em>veľmi</em> dlho.</p>
+    ]]></string>
+    <string name="help_details"><![CDATA[
+        <h1>Detaily Peňaženky</h1>
+        <h2>Verejná Adresa</h2>
+        Vaša verejná adresa je niečo ako číslo bakového účtu, ktoré môžte zdieľať bez toho aby ste sa báli,
+		že prídete o svoje Monero. Ľudia vám budú posielať Monero práve na túto adresu.
+        <h2>Mnemotechnický Seed</h2>
+        Tieto dáta sú potrebné len na obnovu peňaženky a získanie plného prístupu k vašim prostriedkom.
+		Bezpečné uloženie a utajenie týchto dát je veľmi dôležité, keďže pomocou nich <em>hocikto</em> môže získať kontrolu nad vašimi XMR!
+		Ak to ešte nemáš zapísané a uložené niekde na bezpečnom mieste, urob tak čo najskôr!
+        <h2>Heslo pre súbory peňaženky</h2>
+        Uisti sa, že si si heslo zapísal. Ak resetuješ zariadenie, alebo odinštaluješ appku, budeš ho potrebovať na prístup do peňaženky.
+		<br/>
+        <h3>CrAzYpass</h3>
+        Pokiaľ tu zobrazené heslo tvorí 52 alfanumerických znakov v skupinách po 4 - gratulujem!
+        Tvoje súbory peňaženky sú zabezpečené 256-bit kľúčom vygenerovaným bezpečnostnými funkciami Tvojho zariadenia.
+		Extrémne to zťažuje hacknutie týchto súborov!<br/>
+        Táto funkcia je povinná pre všetky novo-vytvorené peňaženky.		
+        <h3>Legacy Password</h3>
+        Ak vidíš svoju prístupovú frázu na tomto mieste, Tvoja peňaženka nie je zabezpečená tak,
+		ako by bola pri použití CrAzYpass. Napraviť to môžeš označením \"Zmeň Frázu\" v menu. 
+		Po vložení novej prístupovej frázy (aj pri tej istej ako predtým), aplikácia ti vygeneruje
+		CrAzYpass a zabezpečí s ním súbory peňaženky. Zapísať!
+        <h3>CrAzYpass peňaženky</h3>
+        Ak budeš potrebovať niekedy preinštalovať Monerujo (napríklad po resetovaní telefónu alebo pri výmene za iný),
+		alebo ak chceš použiť súbory peňaženky na inom zariadení či PC, budeš musieť
+		použiť toto heslo pre obnovu na opätovný prístup do svojej peňaženky.<br/>
+        Označením \"Zmeň Frázu\ z menu, môžeš vybrať inú prístupovú frázu. Tu pozor, pretože to vygenereuje nové heslo pre obnovu.
+		Zapísať!
+		<h2>Prezerací Kľúč</h2>
+        Tvoj prezerací kľúč (view key) môžeš používať na sledovanie prichádzajúcich transakcií do peňaženky,
+		zatiaľ čo míňať prostriedky tento prezerací kľúč neumožňuje.
+		<h2>Platobný Kľúč</h2>
+        Platobný Kľúč (spend key) umožňuje míňať Monero prislúchajúce danej peňaženke,
+		takže ho nikomu nepredrádzaj a uchovaj rovnako bezpečne ako svoj mnemotechnický seed.
+	]]></string>
+    <string name="help_list"><![CDATA[
+        <h1>Zoznam Peňaženiek</h1>
+        <h2>Uzol</h2>
+        <p>Monerujo používa vzdialené uzly na komunikáciu so sieťou Monero. Nie je tak potrebné sťahovať
+		a ukladať celú blockchain ako takú. Zoznam populárnych uzlov spolu s návodmi ako ich rozbehať môžeš nájsť na 
+		https://moneroworld.com/<p>
+        <p>Monerujo prichádza s niekoľkými prednastavenými uzlami. Pamätá si posledných 5 použitých uzlov.</p>
+        <h2>Peňaženky</h2>
+        <p>Tu vidíš svoje peňaženky. Sú umiestnené v adresári <tt>monerujo</tt> na internom úložisku Tvojho zariadenia.
+        Môžeš použiť súborový manažér telefónu na ich vyhľadanuie a zobrazenie.
+		Mal by si robiť pravidelné zálohy týchto adresárov a umiestniť ich mimo zariadenie pre prípad straty, či poškodenia.</p>
+        <p>Označ Peňaženku alebo stlač \"+\" pre vytvorenie novej.
+        Alebo označ jednu z možností:</p>
+        <h3>Detaily</h3>
+        <p>ukáže detaily peňaženky, seed &amp; kľúče.</p>
+        <h3>Prijať</h3>
+        <p>Vytvorí QR kód na prijímanie Moneroj.</p>
+        <h3>Premenuj</h3>
+        <p>Premenuje peňaženku. Zálohy nie sú premenované.</p>
+        <h3>Záloha</h3>
+        <p>Vytvorí kópiu peňaženky v adresári <tt>backups</tt> vnútri <tt>monerujo</tt>
+        prepísaním predchádzajúcich kópií.</p>
+        <h3>Archivovať</h3>
+        <p>Vytvorí zálohu s následným zmazaním peňaženky. Kópia zostáva v adresári <tt>backups</tt>
+        Pokiaľ už nepotrebuješ zálohy, mal by si ich vymazať zo svojho telefónu pomocou súborového manažéra,
+		alebo inej aplikácie na bezpečné mazanie.
+		</p>
+    ]]></string>
+    <string name="help_node"><![CDATA[
+        <h1>Uzly</h1>
+        <h2>TL;DR</h2>
+        <p>Aktuálny zoznam uzlov získaš tak, že potiahneš a pridáš do záložiek 5 uzlov, z ktorých si Monerujo jeden vyberie.</p>
+        <h2>Čo je Uzol?</h2>
+        <p>Monerujo používa vzdialený uzol (Remote Node, niekedy nazývaný aj Daemon) a peňaženka tak môže komunikovať so sieťou Monero bez toho, aby bolo potrebné sťahovať celú blockchain.<p>
+        <h2>Zoznam Uzlov</h2>
+        <p>Ak je zoznam prázdny, môžeš zadať adresu uzla manuálne, alebo môžeš nechať Monerujo preskúmať celú sieť. Prípadne oboje. Čítaj ďalej&#8230;</p>
+        <p>Zoznam uzlov zobrazuje všetky momentálne známe uzly. Pod každým uzlom je zobrazená časová pečiatka jeho posledného bloku.
+		Vedľa je ikonka nodu, ktorá indikuje úroveň pripojenia.</p>
+        <p>Ktorýkoľvek uzol v zozname si môžte pridať do záložiek pre budúce použitie. Uzly, ktoré nebudú uložené, sa z pamäte vymažú.<p>
+        <p>Monerujo vyberie jeden z uložených uzlov pri každom použití. Skontroluje výšku bloku (blockheight) týchto uzlov a zistí, ktorý uzol je ako aktualizovaný, ako dlho trvá odpoveď a podľa toho vyberie pre vás optimálny uzol.</p>
+        <p>Podľa týchto charakteristík je dané aj zoradenie v zozname. Prvý uzol bude ten, ktorý Monerujo vybral práve teraz. Naspodku bude veľmi pomalý uzol s pomalou odozvou, alebo nedostupné uzly.</p>
+        <h2>Pridať Uzol</h2>
+        <p>Dotykom na tlačítko &quot;Pridať Uzol&quot; vložíte detaily vlastného uzla.
+        &quot;Adresa&quot; je hostname alebo IP-adresa uzla. Je to jediné povinné pole.
+        &quot;Port&quot; ak uzol používa iný ako predvolený port (napr. 18089).
+        Môžte si aj pomenovať svoje uzly pre budúce použitie. Je to voliteľné.
+		Niektoré uzly vyžadujú na používanie aj prihlasovacie údaje. V tom prípade napíšte užívateľské meno a heslo do príslušných polí.
+        To by malo stačiť na testovanie týchto nastavení. &quot;Test&quot;
+        &quot;Výsledky Testu&quot; zobrazia výšku, čas odozvy a aktuálnu IP adresu uzla.
+        Vo výsledku môže byť tiež chyba - zvyčajne preto, že uzol nie je dostupný, neodpovedá v požadovanom čase, alebo prihlasovacie údaje nie sú správne.
+		Prípadne kombinácia zadanej adresy a portu neprislúcha žiadnemu uzlu Monero siete!
+        Akonáhle test skončí úspešne (žiadna chyba sa neobjaví) - klepni na &quot;OK&quot; a ulož si daný uzol.</p>
+        <h2>Vyhľadať Uzol</h2>
+        <p>Táto funkcia umožní vyhľadať uzol skenovaním Monero siete. Monerujo začne skenovať sieť a vyhľadávať vzdialené uzly na porte 18089.
+		Začína tým, že sa opýta uzlov vo vašich záložkách na ďalšie uzly v P2P sieti Monero, ktoré sú s nimi spojené, tých sa opýta zas na ďalšie uzly atď. 
+		V prípade, že nemáte žiadne uzly vo svojich záložkách, Monerujo bude skúšať uzly (seed nodes) natvrdo zapísané v kóde Monero. Vyhľadávanie končí ak Monerujo nájde aspoň 10 vzdialených uzlov.</p>
+    ]]></string>
+    <string name="help_ok">Rozumiem!</string>
+    <string name="help_send"><![CDATA[
+        <h1>Poslať</h1>
+        <h2>Adresa Príjemcu</h2>
+        <p>Toto je verejná adresa peňaženky kam posielaš Monero. Môžeš ju kopírovať zo schránky, skenovať QR kód alebo vložiť manuálne.
+		Trikrát sa uisti, že neposielaš mince na zlú adresu.</p>
+        <p>Okrem XMR adries, môžte použiť tiež
+        <ul>
+            <li>OpenAlias pre XMR či BTC</li>
+            <li>BTC adresu</li>
+        </u>
+        Nezabúdajte, že posielanie BTC prebieha cez službu SideShift.ai (detaily na https://sideshift.ai). Pozri sekciu nižšie o posielaní BTC</p>
+        <h1>Posielanie BTC</h1>
+        <h2>SideShift.ai</h2>
+        <p>SideShift.ai je služba tretej strany, ktorá umožňuje zámenu z Monero na Bitcoin.
+        Používame SideShift.ai API na integráciu Bitcoin platieb do Monerujo. Prosím mrkni na 
+		https://sideshift.ai a rozhodni sa sám, či je to naozaj služba, ktorú chceš používať.
+		Tím Monerujo nie je nijako spojený so službou SideShift.ai a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
+        <h2>SideShift.ai Výmenný Kurz<h2>
+        <p>Na obrazovke \"Množstvo\" uvidíš aktuálne parametre služby SideShift.ai, vrátane aktuálneho kurzu BTC, hornej a dolnej hranice.
+		Podotýkame, že tento kurz nie je garantovaný.</p>
+        <h2>SideShift.ai Objednávka<h2>
+        <p>Na obrazovke \"Potvrdiť\", uvidíš aktuálnu objednávku v SideShift.ai. Táto objednávka je platná iba obmedzený čas - ako si môžeš všimnúť odpočítavanie na tlačítku \"Minúť\". 
+		Výmenný kurz sa môže líšiť od toho, ktorý bol na predošlých obrazovkách.</p>
+        <h2>SideShift.ai Tajný Kľúč<h2>
+        <p>Keďže Monerujo dbá len na tú časť transakcie, ktorá pracuje s Monero, 
+		tento SideShift.ai Tajný Kľúč sa môže využívať na sledovanie Bitcoinovej časti transakcie a objednávky
+		na domovskej stránke SideShift.ai</p>
+        <h2>SideShift.ai Odpočítavanie!</h2>
+        <p>Akonáhle odpočítavanie dosiahne nulu, budeš potrebovať nový kľúč z SideShift.ai návratom na predchádzajúci krok a obrazovku \"Potvrdiť\" .</p>
+    ]]></string>
+    <string name="help_tx_details"><![CDATA[
+        <h1>Detaily Transakcie</h1>
+        <h2>Destinácia</h2>
+        Toto je verejná adresa peňaženky kde chceš poslať Monero.
+		<h2>ID Platby</h2>
+        Môžeš použiť ID Platby na identifikáciu platby medzi dvoma stranami. Nie je to síce povinný, ale je to súkromný údaj.
+		Tak napríklad s týmto môžeš zosúladiť svoj biznis s kúpenou položkou. Táto funkcia bude v Monero nahradená podadresami.
+        <h2>TX ID</h2>
+        Toto je ID transakcie, ktoré slúži na identifikáciu transakcie v Monero blockchain exploreri, ako napr. <a href="https://xmrchain.net/">https://xmrchain.net/</a>
+        <h2>TX KĽÚČ (Transaction Key)</h2>
+        Toto je Tvoj súkromný kľúč transakcie, uchovaj ho bezpečne a neposkytuj ho tretím stranám,
+		aby nemohli identifikovať tvoj podpis v kruhovom podpise a spraviť tak transakciu verejnú a transparentnú.		
+        <h2>Blok</h2>
+        Blok do ktorého je zaradená vaša transakcia.
+		
+    ]]></string>
+    <string name="help_wallet"><![CDATA[
+        <h1>Peňaženka</h1>
+
+        <h2>Mód Ulica</h2>
+        <p>Mód Ulica sa povoľuje a vypína v menu, alebo klepnutím na ikonu Guntherovej hlavy. V tomto móde sa váš zostatok nezobrazuje na žiadnej obrazovke,
+		takže svoju peňaženku môžte smelo používať na ulici, v krčme, či na inom  verejnom mieste. Po nastavení sú skryté aj predchádzajúce transakcie, zatiaľ čo nové budú zobrazené,
+		aby ste mohli vidieť či vám odoslalo a dorazilo všetko správne.</p>
+
+        <h2>Skenovanie</h2>
+        Keďže Monero obľubuje súkromie, zakaždým pri otváraní Monerujo musíme skenovať blockchain aby sme videli, či nedorazili nové Monerá.
+		Monerujo uchováva len tie informácie, ktoré prislúchajú vašej peňaženke. Pokiaľ nemáte sychronizovanú peňaženku dlhší čas, synchronizácia môže trvať dlho.
+        <h2>Zostatok</h2>
+        <p><b>Pomóc! Zostatok v mojej peňaženke zmizol, alebo je nepotvrdený!</b><br/>
+        Nestresuj! Keď odosielaš prostriedky zo svojej peňaženky, časť zostatku sa dočasne ukáže ako nepotvrdená.
+
+        Súvisí to s tým, ako je Monero navrhnuté a ako funguje zmena v blockchain.
+
+		Viac o zmenách sa dočítaš (anglicky) na https://getmonero.org/resources/moneropedia/change.html
+        <h2>Zoznam Transakcií</h2>
+        <p>Zoznam transakcií v peňaženke. V prípade prezeracej peňaženky budú zobrazené iba prichádzajúce transakcie.</p>
+    ]]></string>
+    <string name="help_xmrto"><![CDATA[
+        <h1>Posielanie BTC</h1>
+        <h2>SideShift.ai</h2>
+        <p>SideShift.ai je služba tretej strany, ktorá umožňuje zámenu z Monero na Bitcoin.
+        Používame SideShift.ai API na integráciu Bitcoin platieb do Monerujo. Prosím mrkni na
+		https://sideshift.ai a rozhodni sa sám, či je to naozaj služba, ktorú chceš používať.
+		Tím Monerujo nie je nijako spojený so službou SideShift.ai a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
+        <h2>SideShift.ai Výmenný Kurz<h2>
+        <p>Na obrazovke \"Množstvo\" uvidíš aktuálne parametre služby SideShift.ai, vrátane aktuálneho kurzu BTC, hornej a dolnej hranice.
+		Podotýkame, že tento kurz nie je garantovaný.</p>
+        <h2>SideShift.ai Objednávka<h2>
+        <p>Na obrazovke \"Potvrdiť\", uvidíš aktuálnu objednávku v SideShift.ai. Táto objednávka je platná iba obmedzený čas - ako si môžeš všimnúť odpočítavanie na tlačítku \"Minúť\".
+		Výmenný kurz sa môže líšiť od toho, ktorý bol na predošlých obrazovkách.</p>
+        <h2>SideShift.ai Tajný Kľúč<h2>
+        <p>Keďže Monerujo dbá len na tú časť transakcie, ktorá pracuje s Monero,
+		tento SideShift.ai Tajný Kľúč sa môže využívať na sledovanie Bitcoinovej časti transakcie a objednávky
+		na domovskej stránke SideShift.ai</p>
+        <h2>SideShift.ai Odpočítavanie!</h2>
+        <p>Akonáhle odpočítavanie dosiahne nulu, budeš potrebovať nový kľúč z SideShift.ai návratom na predchádzajúci krok a obrazovku \"Potvrdiť\" .</p>
+    ]]></string>
+    <string name="icon_content_description">Ikona dialógového okna</string>
+    <string name="item_view_role_description">Tabulátor</string>
+    <string name="material_clock_toggle_content_description">Vyberte AM alebo PM</string>
+    <string name="material_hour_selection">Vybrať hodinu</string>
+    <string name="material_hour_suffix">%1$s</string>
+    <string name="material_minute_selection">Vyberte minúty</string>
+    <string name="material_minute_suffix">%1$s min</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Ak chcete zadať čas, prepnite na režim hodín.</string>
+    <string name="material_timepicker_hour">Hodina</string>
+    <string name="material_timepicker_minute">Minúta</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Vyberte čas</string>
+    <string name="material_timepicker_text_input_mode_description">Ak chcete zadať čas, prepnite na textový režim vstupu</string>
+    <string name="mtrl_badge_numberless_content_description">Nové upozornenie</string>
+    <string name="mtrl_chip_close_icon_content_description">Odstrániť položku %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Viac než %1$d nových upozornení</string>
+    <string name="mtrl_picker_a11y_next_month">Ďalší mesiac</string>
+    <string name="mtrl_picker_a11y_prev_month">Predchádzajúci mesiac</string>
+    <string name="mtrl_picker_announce_current_selection">Aktuálny výber: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Vyberte dátum</string>
+    <string name="mtrl_picker_date_header_unselected">Vybraný dátum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Stĺpec dní: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Neplatný formát.</string>
+    <string name="mtrl_picker_invalid_format_example">Príklad: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Použite: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Neplatný rozsah.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Prejsť na rok %1$s</string>
+    <string name="mtrl_picker_out_of_range">Mimo rozsahu: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Dátum začatia – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – dátum ukončenia</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Vyberte rozsah</string>
+    <string name="mtrl_picker_range_header_unselected">Dátum začatia – dátum ukončenia</string>
+    <string name="mtrl_picker_save">Uložiť</string>
+    <string name="mtrl_picker_text_input_date_hint">Dátum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Dátum ukončenia</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Dátum začatia</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">r</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Prepnúť na kalendárový režim vstupu</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Klepnutím prepnete na výber dňa</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Prepnúť na textový režim vstupu</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Klepnutím prepnete na výber roka</string>
+    <string name="password_toggle_content_description">Zobraziť heslo</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Hľadať"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

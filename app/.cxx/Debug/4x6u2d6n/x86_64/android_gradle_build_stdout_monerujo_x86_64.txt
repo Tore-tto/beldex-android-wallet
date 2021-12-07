@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\.cxx\Debug\4x6u2d6n\x86_64'
+ninja: no work to do.

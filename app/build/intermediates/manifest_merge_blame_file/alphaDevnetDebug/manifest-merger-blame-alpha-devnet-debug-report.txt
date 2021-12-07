@@ -1,0 +1,245 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.beldex.beldex_bdx_wallet"
+4    android:versionCode="3"
+5    android:versionName="1.0.2 &apos;Feng Huang&apos;" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+14-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:8:5-74
+14-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:8:22-71
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:9:5-68
+15-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:9:22-65
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:10:5-65
+16-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+17-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:11:5-72
+17-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:11:22-69
+18    <uses-permission android:name="android.permission.NFC" />
+18-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:12:5-62
+18-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:12:22-59
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:13:5-77
+19-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:13:22-74
+20
+21    <application
+21-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:15:5-98:19
+22        android:name="com.m2049r.xmrwallet.XmrWalletApplication"
+22-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:16:9-45
+23        android:allowBackup="false"
+23-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:17:9-36
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.6.0] C:\Users\Blockhash\.gradle\caches\transforms-3\348f6d52d990d4fb4fcc5abc17a1cdcd\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:18:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:19:9-41
+28        android:preserveLegacyExternalStorage="true"
+28-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:20:9-53
+29        android:supportsRtl="true"
+29-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:21:9-35
+30        android:testOnly="true"
+31        android:theme="@style/MyMaterialTheme"
+31-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:22:9-47
+32        android:usesCleartextTraffic="true" >
+32-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:23:9-44
+33        <activity
+33-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:24:9-26:39
+34            android:name="com.m2049r.xmrwallet.SettingsActivity"
+34-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:25:13-45
+35            android:exported="true" />
+35-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:26:13-36
+36        <activity
+36-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:27:9-29:39
+37            android:name="com.m2049r.xmrwallet.Splashscreen"
+37-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:28:13-41
+38            android:exported="true" />
+38-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:29:13-36
+39        <activity
+39-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:30:9-40:20
+40            android:name="com.m2049r.xmrwallet.MainActivity"
+40-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:31:13-41
+41            android:configChanges="orientation|keyboardHidden|uiMode"
+41-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:32:13-70
+42            android:launchMode="singleTop"
+42-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:33:13-43
+43            android:screenOrientation="portrait" >
+43-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:34:13-49
+44            <intent-filter>
+44-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:35:13-39:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:36:17-69
+45-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:36:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:38:17-77
+47-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:38:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:41:9-46:50
+51            android:name="com.m2049r.xmrwallet.WalletActivity"
+51-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:42:13-43
+52            android:configChanges="orientation|keyboardHidden|uiMode"
+52-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:43:13-70
+53            android:label="@string/wallet_activity_name"
+53-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:44:13-57
+54            android:launchMode="singleTask"
+54-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:45:13-44
+55            android:screenOrientation="behind" />
+55-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:46:13-47
+56        <activity
+56-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:47:9-76:20
+57            android:name="com.m2049r.xmrwallet.LoginActivity"
+57-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:48:13-42
+58            android:configChanges="orientation|keyboardHidden|uiMode"
+58-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:49:13-70
+59            android:label="@string/app_name"
+59-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:50:13-45
+60            android:launchMode="singleTop"
+60-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:51:13-43
+61            android:screenOrientation="locked" >
+61-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:52:13-47
+62            <intent-filter>
+62-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:53:13-55:29
+63                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+63-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:54:17-90
+63-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:54:25-87
+64            </intent-filter>
+65            <intent-filter android:label="@string/app_name" >
+65-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:56:13-63:29
+65-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:56:28-60
+66                <action android:name="android.intent.action.VIEW" />
+66-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:57:17-69
+66-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:57:25-66
+67
+68                <data android:scheme="monero" />
+68-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:59:17-49
+68-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:59:23-46
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:61:17-76
+70-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:61:27-73
+71                <category android:name="android.intent.category.BROWSABLE" />
+71-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:62:17-78
+71-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:62:27-75
+72            </intent-filter>
+73            <intent-filter android:label="@string/app_name" >
+73-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:64:13-71:29
+73-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:64:28-60
+74                <action android:name="android.intent.action.VIEW" />
+74-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:57:17-69
+74-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:57:25-66
+75
+76                <data android:scheme="bitcoin" />
+76-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:59:17-49
+76-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:59:23-46
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:61:17-76
+78-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:61:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:62:17-78
+79-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:62:27-75
+80            </intent-filter>
+81
+82            <meta-data
+82-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:73:13-75:61
+83                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+83-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:74:17-79
+84                android:resource="@xml/usb_device_filter" />
+84-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:75:17-58
+85        </activity>
+86        <activity
+86-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:77:9-81:52
+87            android:name="com.m2049r.xmrwallet.onboarding.OnBoardingActivity"
+87-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:78:13-58
+88            android:configChanges="orientation|keyboardHidden|uiMode"
+88-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:79:13-70
+89            android:launchMode="singleTask"
+89-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:80:13-44
+90            android:screenOrientation="portrait" />
+90-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:81:13-49
+91
+92        <service
+92-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:83:9-87:53
+93            android:name="com.m2049r.xmrwallet.service.WalletService"
+93-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:84:13-50
+94            android:description="@string/service_description"
+94-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:85:13-62
+95            android:exported="false"
+95-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:86:13-37
+96            android:label="Beldex Wallet Service" />
+96-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:87:13-50
+97
+98        <provider
+99            android:name="androidx.core.content.FileProvider"
+99-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:90:13-62
+100            android:authorities="com.beldex.beldex_bdx_wallet.fileprovider"
+100-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:91:13-64
+101            android:exported="false"
+101-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:92:13-37
+102            android:grantUriPermissions="true" >
+102-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:93:13-47
+103            <meta-data
+103-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:94:13-96:53
+104                android:name="android.support.FILE_PROVIDER_PATHS"
+104-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:95:17-67
+105                android:resource="@xml/filepaths" />
+105-->C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\src\main\AndroidManifest.xml:96:17-50
+106        </provider>
+107        <!-- The activities will be merged into the manifest of the hosting app. -->
+108        <activity
+108-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:5-271
+109            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+109-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:15-102
+110            android:enabled="false"
+110-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:103-126
+111            android:exported="false"
+111-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:127-151
+112            android:launchMode="singleInstance"
+112-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:204-239
+113            android:process=":playcore_missing_splits_activity"
+113-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:152-203
+114            android:stateNotNeeded="true" />
+114-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:12:240-269
+115        <activity
+115-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:5-226
+116            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+116-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:15-95
+117            android:enabled="false"
+117-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:96-119
+118            android:exported="false"
+118-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:120-144
+119            android:stateNotNeeded="true"
+119-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:145-174
+120            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+120-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:13:175-224
+121        <service
+121-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:16:5-145
+122            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+122-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:16:14-95
+123            android:enabled="false"
+123-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:16:96-119
+124            android:exported="true" />
+124-->[com.google.android.play:core:1.8.3] C:\Users\Blockhash\.gradle\caches\transforms-3\c3ae95615efbe5558521360ab19bd327\transformed\jetified-core-1.8.3\AndroidManifest.xml:16:120-143
+125    </application>
+126
+127</manifest>

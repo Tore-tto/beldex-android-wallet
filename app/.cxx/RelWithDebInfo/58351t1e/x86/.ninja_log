@@ -1,0 +1,25 @@
+# ninja log v5
+0	5369	655296229	CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o	d3af1da9f858343e
+5408	10120	655296235	../../../../build/intermediates/cxx/RelWithDebInfo/58351t1e/obj/x86/libmonerujo.so	1676538759a12255
+4	2176	655388361	CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o	d3af1da9f858343e
+2176	3950	655388363	../../../../build/intermediates/cxx/RelWithDebInfo/58351t1e/obj/x86/libmonerujo.so	1676538759a12255
+0	9	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+0	7	0	clean	bd91a328350497de
+1	8	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+8	1959	655466116	CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o	d3af1da9f858343e
+1959	4259	655466118	../../../../build/intermediates/cxx/RelWithDebInfo/58351t1e/obj/x86/libmonerujo.so	1676538759a12255
+0	16	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+1	7	0	clean	bd91a328350497de
+0	7	0	clean	bd91a328350497de
+1	7	0	clean	bd91a328350497de
+1	8	0	clean	bd91a328350497de
+0	10	0	clean	bd91a328350497de
+0	10	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de
+1	7	0	clean	bd91a328350497de
+0	6	0	clean	bd91a328350497de

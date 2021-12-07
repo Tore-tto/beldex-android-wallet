@@ -1,0 +1,1 @@
+C:\Users\Blockhash\StudioProjects\repository_beldex_android_wallet\app\CMakeLists.txt

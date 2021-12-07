@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etDummy"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/llAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/cardBackgroundColor"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etAddress"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toStartOf="@+id/bPasteAddress"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/MoneroEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:background="@color/cardBackgroundColor"
+                        android:hint="@string/send_address_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="0dp"
+                        android:textAlignment="textStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/bPasteAddress"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_content_paste_24dp" />
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llExchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <ImageButton
+                        android:id="@+id/ibXMR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_monero" />
+
+                    <ImageButton
+                        android:id="@+id/ibBTC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_xmrto_btc_off" />
+
+                    <ImageButton
+                        android:id="@+id/ibLTC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_xmrto_ltc_off" />
+
+                    <ImageButton
+                        android:id="@+id/ibETH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_xmrto_eth_off" />
+
+                    <ImageButton
+                        android:id="@+id/ibDASH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_xmrto_dash_off" />
+
+                    <ImageButton
+                        android:id="@+id/ibDOGE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_xmrto_doge_off" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvXmrTo"
+                    style="@style/MoneroText.Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="start"
+                    android:singleLine="false"
+                    android:text="@string/label_send_btc_xmrto_key"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    app:drawableStartCompat="@drawable/gunther_24dp"
+                    tools:text="@string/info_xmrto" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@color/cardBackgroundColor">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etNotes"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/MoneroEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardBackgroundColor"
+                    android:paddingStart="0dp"
+                    android:hint="@string/send_notes_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="textStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                card_view:cardBackgroundColor="@color/cardBackgroundColor"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:contentPadding="16dp"
+                card_view:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    style="@style/MoneroText.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/ic_qr_code_svg"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click to Scan"
+                    style="@style/MoneroText.Button"
+                    android:textColor="@color/greenColor"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvNfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_nfc_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

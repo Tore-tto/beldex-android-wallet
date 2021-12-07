@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/MoneroLabel.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:visibility="visible"
+            android:text="@string/label_daemon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_toStartOf="@+id/ibRenew">
+
+                <ProgressBar
+                    android:id="@+id/pbNode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/llNode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="start|center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNodeName"
+                        style="@style/MoneroText.PosAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        app:drawableStartCompat="@drawable/ic_refresh_black_24dp"
+                        tools:text="monero-v9.monerujo.io" />
+
+                    <TextView
+                        android:id="@+id/tvNodeAddress"
+                        android:textSize="11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:textColor="@color/textColor"
+                        tools:text="128.130.233.151:18089" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/ibRenew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/ic_renew_24dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etDummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/MoneroLabel.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="@string/label_login_wallets" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivGunther"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_empty_wallet_image"
+                android:scaleType="centerInside"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvGuntherSays"/>
+
+            <TextView
+                android:id="@+id/tvGuntherSays"
+                style="@style/MoneroText.Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/walletActionButtonLinearLayout"
+                android:text="@string/gunther_says" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="72dp"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_wallet" />
+
+            <LinearLayout
+                android:id="@+id/walletActionButtonLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/createWalletButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:text="Create\nWallet"
+                    android:theme="@style/NormalButton"
+                    app:cornerRadius="5dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/restoreWalletButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:text="Restore\nWallet"
+                    android:theme="@style/NormalButton"
+                    app:cornerRadius="5dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <!--<ProgressBar
+        android:id="@+id/pbNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />-->
+
+    <include layout="@layout/layout_fabmenu" />
+</FrameLayout>

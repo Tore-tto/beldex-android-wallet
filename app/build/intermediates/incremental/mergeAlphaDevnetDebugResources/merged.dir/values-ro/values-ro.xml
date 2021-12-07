@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificare nouă</item>
+    <item quantity="few">%d notificări noi</item>
+    <item quantity="other">%d de notificări noi</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navigați la ecranul de pornire"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navigați în sus"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Mai multe opțiuni"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Gata"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Afișați tot"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Alegeți o aplicație"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DEZACTIVAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ACTIVAT"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Meniu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Căutați…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Ștergeți interogarea"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Termen de căutare"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Căutați"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Trimiteți interogarea"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Căutare vocală"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Trimiteți la"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Trimiteți folosind <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Restrângeți"</string>
+    <string name="about_close">Close</string>
+    <string name="about_version">Version %1$s (%2$d)</string>
+    <string name="about_whoami" translatable="false">I am Beldex</string>
+    <string name="bottomsheet_action_expand_halfway">Extinde pe ecran complet</string>
+    <string name="character_counter_content_description">Caractere introduse: %1$d din %2$d</string>
+    <string name="character_counter_overflowed_content_description">Limita de caractere a depășit %1$d din %2$d</string>
+    <string name="clear_text_end_icon_content_description">Ștergeți textul</string>
+    <string name="credits_text" translatable="false"><![CDATA[
+        <b>Credits</b>
+        <br/>
+         m2049r, baltsar777, anhdres, keejef,
+        rehrar, EarlOfEgo, ErCiccione et al, sanada08, scilicet64 .
+        <br/><br/>
+        <a href="https://www.beldex.io/">beldex.io</a>
+        ]]></string>
+    <string name="error_icon_content_description">Eroare</string>
+    <string name="explorer_text" translatable="false">Check your transaction here</string>
+    <string name="exposed_dropdown_menu_content_description">Afișați meniul drop-down</string>
+    <string name="help_create_keys"><![CDATA[
+        <h1>Creează Portofel - Chei de acces</h1>
+        <p>Dacă încerci recuperarea portofelului folosind cheile de acces!</p>
+        <p>Introdu un nume unic al portofelului și o parolă. Parola este folosită pentru a securiza informațiile
+	portofelului de pe dispozitiv. Folosește o parolă dificilă - folosește chiar o frază.<p>
+        <p>Introdu adresa portofelului tău Monero în câmpul \"Adresă publică\", completează câmpul \"Cheie vizualizare\" 
+	și \"Cheie consum\".</p>
+        <p>În cazul în care știi monoblocul în care a fost procesată prima ta tranzacție folosind această adresă,
+        te rugăm să-l introduci în câmpul \"Număr monobloc\". La fel poți să introduci o dată în format AAAA-LL-ZZ.
+        Dacă nu ești sigur(ă), introdu o dată/număr aproximativ <em>anterior</em> primei utilizări a portofelului.</p>
+    ]]></string>
+    <string name="help_create_ledger"><![CDATA[
+        <h1>Creează Portofel - Ledger</h1>
+        <p>Dacă dorești să recuperezi portofelul tău cu dispozitivul Ledger Nano S.</p>
+        <p>Cheile tale secrete nu părăsesc niciodată dispozitivul Ledger, va trebui să-l conectezi de fiecare
+        dată când vrei să accesezi portofelul tău.</p>
+        <p>Introdu un nume unic al portofelului și o parolă. Parola este folosită pentru a securiza informațiile portofelului
+        de pe dispozitiv. Folosește o parolă dificilă - folosește chiar o frază.</p>
+        <p>În cazul în care știi monoblocul în care a fost procesată prima ta tranzacție folosind această adresă,
+        te rugăm să-l introduci în câmpul \"Număr monobloc\". La fel poți să introduci o dată în format AAAA-LL-ZZ.
+        Dacă nu ești sigur(ă), introdu o dată/număr aproximativ <em>anterior</em> primei utilizări a portofelului.</p>
+    ]]></string>
+    <string name="help_create_new"><![CDATA[
+        <h1>Creează Portofel - Nou</h1>
+        <p>Dacă ai nevoie de o adresă nouă pentru Monero!</p>
+        <p>Introdu un nume unic al portofelului și o parolă. Parola este folosită pentru a securiza informațiile portofelului
+	de pe dispozitiv. Folosește o parolă dificilă - folosește chiar o frază.</p>
+        <h2>Notează-ți Semnătura Mnemonică!</h2>
+        <p>În următorul ecran vor fi afișate 25 de cuvinte care reprezintă \"Semnătura Mnemonică\".
+        Aceasta este singura informație necesară pentru recuperarea portofelului tău într-un moment ulterior și obținerea
+	accesului deplin la fondurile tale. Păstrarea acesteia într-un mediu privat și securizat este foarte importantă,
+	deoarece va permite <em>oricui</em> acces total la fondurile tale!</p>
+        <p>În cazul în care ți-ai pierdut parola portofelului, vei putea recupera accesul la el folosind Semnătura Mnemonică.</p>
+        <p>Nu există o altă modalitate de a-ți recupera Semnătura Mnemonică, dacă o pierzi, toate fondurile tale vor fi pierdute!
+        Totodată Semnătura Mnemonică nu poate fi schimbată, iar dacă ea este furată sau compromisă, trebuie să îți muți
+	fondurile către o nouă adresă de portofel (care va conține o altă Semnătură Mnemonică). Prin urmare, este mai bine
+	să copiezi în siguranță Semnătura Mnemonică în <em>mai multe</em> locații sigure și de încredere.</p>
+    ]]></string>
+    <string name="help_create_seed"><![CDATA[
+        <h1>Creează Portofel - Semnătură</h1>
+        <p>În cazul în care deții deja o adresă de portofel pentru Monero și dorești să îți recuperezi tranzacțiile din baza
+	de date distribuită (blockchain)</p>
+        <p>Introdu un nume unic al portofelului și o parolă. Parola este folosită pentru a securiza informațiile portofelului
+	de pe dispozitiv. Folosește o parolă dificilă - folosește chiar o frază.</p>
+        <p>Introdu cuvintele Semnăturii Mnemonice în câmpul \"Semnătură Mnemonică\".<p>
+        <p>În cazul în care știi monoblocul în care a fost procesată prima ta tranzacție folosind această adresă,
+	te rugăm să-l introduci în câmpul \"Număr monobloc\". La fel poți să introduci o dată în format AAAA-LL-ZZ. 
+	Dacă nu ești sigur(ă), introdu o dată/număr aproximativ <em>anterior</em> primei utilizări a portofelului.</p>
+    ]]></string>
+    <string name="help_create_view"><![CDATA[
+        <h1>Creează Portofel - Vizualizare</h1>
+        <p>În cazul în care dorești să vizualizezi tranzacțiile primite!</p>
+        <p>Introdu un nume unic al portofelului și o parolă. Parola este folosită pentru a securiza informațiile
+	portofelului de pe dispozitiv. Folosește o parolă dificilă - folosește chiar o frază.<p>
+        <p>Introdu adresa portofelului tău Monero în câmpul \"Adresă publică\" și completează câmpul
+	\"Cheie vizualizare\".</p>
+        <p>În cazul în care știi monoblocul în care a fost procesată prima ta tranzacție folosind această adresă,
+        te rugăm să-l introduci în câmpul \"Număr monobloc\". La fel poți să introduci o dată în format AAAA-LL-ZZ.
+        Dacă nu ești sigur(ă), introdu o dată/număr aproximativ <em>anterior</em> primei utilizări a portofelului.</p>
+    ]]></string>
+    <string name="help_details"><![CDATA[
+        <h1>Detalii Portofel</h1>
+        <h2>Adresă publică</h2>
+        Adresa publică a protofelului reprezintă, ca și exemplu, un cont bancar, număr pe care îl poți împărtăși
+	cu oricine fără a avea teama de a pierde din balanța Monero. Oricine poate trimite Monero către portofelul
+	tău folosind această adresă.
+        <h2>Semnătura Mnemonică</h2>
+        Aceasta este singura informație necesară pentru recuperarea portofelului tău într-un moment ulterior
+	și obținerea accesului deplin la fondurile tale. Păstrarea acesteia într-un mediu privat și securizat
+	este foarte importantă, deoarece va permite <em>oricui</em> acces total la fondurile tale!
+	În cazul în care nu ai notat această informație într-un loc sigur, te rog să o faci acum!
+        <h2>Parolă Recuperare Fișiere Portofel</h2>
+        Asigură-te că ai notat această parolă. Dacă resetezi dispozitivul sau ștergi aplicația, vei avea
+        nevoie de ea pentru a accesa portofelul din nou.<br/>
+        <h3>CrAzYpass</h3>
+        Dacă parola afișată aici e formată din 52 caractere alfanumerice în grupuri a câte 4 - felicitări!
+        Fișierele portofelului tău sunt securizate cu o cheie pe 256 biți generată de dispozitiv
+        pe baza parolei alese (la creare sau prin modificare). Este extrem de dificil
+        să o spargi!<br/>
+        E obligatorie pentru toate portofelele noi create.
+        <h3>Parolă</h3>
+        Dacă aici e afișată parola ta, fișierele portofelului tău sunt mai puțin securizate decât la setarea
+        unui CrAzYpass. Pentru a corecta, simplu selectează \"Schimbă Parola\" din meniu. După introducerea
+        unei noi parole (inclusiv una folosită anterior) aplicația va genera un CrAzYpass pentru
+        tine și va securiza fișierele portofelului cu ajutorul lui. Notează-l!
+        <h3>Portofele CrAzYpass</h3>
+        Dacă dorești să reinstalezi Monerujo (ca exemplu, după resetarea telefonului sau trecerea
+        la unul nou) sau dorești să utilizezi fișierele portofelului pe un alt dispozitiv sau PC, folosește
+        Parola de Recuperare pentru a accesa portofelul din nou.<br/>
+        La selectarea \"Schimbă Parola\" din meniu, poți alege o parolă nouă. Aceasta va genera
+        o Parolă de Recuperare nouă. Noteaz-o!
+        <h2>Cheie vizualizare</h2>
+        Cheia ta de vizualizare poate fi folosită pentru a monitoriza tranzacțiile primite fără a da permisiunea
+	de a cheltui fondurile aflate în portofelul tău.
+        <h2>Cheie consum</h2>
+        Cheia ta de consum permite oricui să cheltuie fondurile Monero asociate cu portofelul tău, așa că nu
+	divulga nimănui această cheie și păstreaz-o în siguranță precum Semnătura Mnemonică.
+    ]]></string>
+    <string name="help_list"><![CDATA[
+        <h1>Listă Portofele</h1>
+        <h2>Nod</h2>
+        <p>Monerujo folosește un dispozitiv la distanță (remote node) pentru a comunica cu Rețeaua Monero
+	fără a descărca și a stoca o copie a întregii baze de date distribuite (blockchain). Poți găsi o listă
+	populară de noduri de asamblare aflate la distanța, sau despre cum să creezi un nod de asamblare personal,
+	la adresa https://moneroworld.com/<p>
+        <p>Monerujo vine cu o listă presetată de noduri de asamblare aflate la distanță (remote nodes).
+	De asemenea, Monerujo reține ultimele cinci noduri folosite.</p>
+        <h2>Portofele</h2>
+        <p>Aici sunt afișate portofelele tale. Ele sunt salvate în dosarul <tt>monerujo</tt> aflat în
+	memoria internă a dispozitivului tău. Poți să utilizezi un manager de fișiere pentru a le vedea.
+	Ar trebui să efectuezi, în mod regulat, copii de siguranță ale acestui dosar pe alte dispozitive,
+	în cazul în care dispozitivul tău va avea o disfuncționalitate sau va fi furat.</p>
+        <p>Selectează un portofel pentru a-l deschide sau atinge \"+\" pentru a crea unul nou.
+        Sau selectează una din operațiunile portofelului:</p>
+        <h3>Detalii</h3>
+        <p>Arată detaliile portofelului, Semnătură &amp; chei de acces.</p>
+        <h3>Primește</h3>
+        <p>Creează un cod QR pentru a primi Monero.</p>
+        <h3>Redenumește</h3>
+        <p>Redenumește portofelul. Copiile de siguranță (backups) nu sunt redenumite în această operațiune.</p>
+        <h3>Copie de siguranță</h3>
+        <p>Creează o copie de siguranță în dosarul <tt>backups</tt> aflat în dosarul <tt>monerujo</tt> 
+	suprascriind copiile anterioare.</p>
+        <h3>Arhivează</h3>
+        <p>Efectuează o copie de siguranță și apoi șterge fișierul portofelului. Copia va rămâne
+	în dosarul <tt>backups</tt>. În cazul în care copiile de siguranță nu îți mai sunt necesare,
+	va trebui să le ștergi folosind un manager de fișiere sau să ștergi aplicația într-un mod sigur.</p>
+    ]]></string>
+    <string name="help_node"><![CDATA[
+        <h1>Noduri</h1>
+        <h2>TL;DR</h2>
+        <p>Actualizează lista de noduri prin tragerea în jos &amp; marchează 3&#8211;5 noduri pentru a permite lui Monerujo
+        să-l aleagă pe cel mai bun!</p>
+        <h2>Ce este un Nod?</h2>
+        <p>Monerujo folosește un nod la distanță (cunoscut și ca Daemon) pentru a comunica cu
+        Rețeaua Monero fără a descărca și stoca o copie a
+        întregului blockchain.<p>
+        <h2>Listă Noduri</h2>
+        <p>Dacă lista este goală, fie adaugi manual noduri noi sau îl lași pe Monerujo
+        să scaneze rețeaua pentru tine. Sau ambele. Mai mullt&#8230;</p>
+        <p>Lista de noduri conține toate nodurile cunoscute în prezent. Mai mult, marca temporală
+        a ultimului monobloc cunoscută fiecărui nod este afișată sub numele nodului. Calitatea răspunsului
+        primit de la nod e reprezentat cu o iconiță (care indică nivelul de conectivitate așteptat)
+        plasată lângă fiecare nod.</p>
+        <p>Orice nod din listă poate fi marcat pentru a fi utilizat mai târziu.
+        Nodurile care nu sunt marcate vor fi uitate.<p>
+        <p>Monerujo va selecta nodul optim marcat la fiecare utilizare.
+        Aceasta are loc atât prin verificarea numărului monoblocului (cât de actual
+        e nodul?), cât și prin calitatea răspunsului nodului (cât de repede sunt procesate cererile?).</p>
+        <p>Lista e sortată după aceste caracteristici, așă că acum Monerujo va alege nodul
+        cel mai bun. Josul listei va conține noduri foarte lente sau indisponibile.</p>
+        <h2>Adaugă un Nod</h2>
+        <p>La atingerea butonului &quot;Adaugă Nod&quot; din josul ecranului, va trebui
+        să introduci informația nodului în dialogul următor.
+        &quot;Adresa&quot; e hostname-ul sau adresa IP a nodului - unicul câmp
+        obligatoriu.
+        Introdu &quot;Portul&quot; dacă nodul folosește un port personalizat (ex. 18089).
+        Opțional, poți denumi nodul, ca să-l identifici mai ușor mai târziu.
+        Unele noduri necesită date la utilizare. Introdu numele de utilizator &amp;
+        și parola comunicate în câmpurile respective. Apoi &quot;Testează&quot; aceste setări.
+        &quot;Rezultatul Testării&quot; va conține numărul monoblocului, timpul de răspuns și adresa IP folosită.
+        Rezultatul poate fi și o eroare - de obicei pentru că hostname-ul comunicat nu
+        poate fi accesat în timp rezonabil sau datele sunt incorecte.
+        Sau combinația hostname/port nu contactează un Nod Monero actual!
+        Odată ce testarea e pozitivă (fără erori) - atinge &quot;OK&quot; pentru a salva &amp;
+        marca acest nod.</p>
+        <h2>Scanare Noduri</h2>
+        <p>În plus, poți scana rețeaua pentru noduri. Monerujo va începe
+        scanarea rețelei pentru noduri la distanță cu portul 18089. Primele sunt solicitate
+        nodurile marcate, care vor furniza alți parteneri în rețeaua P2P Monero care, la rândul lor,
+        vor căuta alții, și așa mai departe. Dacă nu ai noduri marcate
+        (sau ele nu comunică informația partenerilor),
+        Monerujo va accesa nodurile integrate în Monero. Scanarea
+        se finalizează odată ce s-au găsit 10 noduri la distanță.</p>
+    ]]></string>
+    <string name="help_ok">Am înțeles!</string>
+    <string name="help_send"><![CDATA[
+        <h1>Trimitere</h1>
+        <h2>Adresa destinatarului</h2>
+        <p>Aceasta este adresa publică a destinatarului la care vrei să trimiți Monero, poți copia
+	această adresă folosind clipboard-ul, scanând codul QR sau introducând-o manual. Verifică
+	repetat această adresă pentru a fi sigur că trimiți monedele la o adresă corectă.</p>
+        <p>Pe lângă adresa XMR, poți folosi
+        <ul>
+            <li>un OpenAlias pentru XMR sau BTC</li>
+            <li>o adresă BTC</li>
+        </u>
+        Atenție, transferul BTC este procesat de serviciul SideShift.ai (vezi https://sideshift.ai
+        pentru detalii). Vezi mai jos secțiunea Transfer BTC.</p>
+        <h1>Transfer BTC</h1>
+        <h2>SideShift.ai</h2>
+        <p>SideShift.ai este un serviciu terță parte care acționează ca un schimb valutar între Monero și Bitcoin.
+        Noi folosim API-ul SideShift.ai pentru a integra plățile Bitcoin în Monerujo. Vezi
+        https://sideshift.ai și decide singur dacă acesta este un serviciu pe care dorești să îl folosești. Echipa Monerujo
+        nu este asociată în niciun fel cu SideShift.ai și nu te poate ajuta cu serviciile oferite de ei.</p>
+        <h2>Rata de schimb a SideShift.ai<h2>
+        <p>Pe ecranul cu \"Suma\" vor fi afișați parametrii serviciului SideShift.ai. Aceștia includ cursul de
+	schimb actual, precum și limitele superioare și inferioare ale BTC. Reține că aceste rate de schimb
+	nu sunt garantate în acest moment.</p>
+        <h2>Ordin SideShift.ai<h2>
+        <p>Pe ecranul cu \"Confirm\", vei vedea ordinul actual al SideShift.ai. Acest ordin este valabil pentru
+	un timp limitat - este posibil să observi o numărătoare inversă pe butonul \"Consum\". Rata de schimb poate
+	fi diferită de cea indicată pe ecranele anterioare.</p>
+        <h2>Cheia secretă SideShift.ai<h2>
+        <p>Din moment ce Monerujo gestionează numai partea Monero din tranzacția ta, cheia secretă a SideShift.ai
+        poate fi folosită pentru a urmări partea Bitcoin a comenzii tale de pe site-ul SideShift.ai.</p>
+        <h2>Numerotarea inversă SideShift.ai</h2>
+        <p>În momentul în care numerotarea inversă ajunge la zero, va trebui să obții o nouă cotație de la SideShift.ai mergând
+	înapoi la pasul anterior, apoi revenind la ecranul \"Confirm\".</p>
+    ]]></string>
+    <string name="help_tx_details"><![CDATA[
+        <h1>Detalii tranzacție</h1>
+        <h2>Destinație</h2>
+        Aceasta este adresa publică la care tu ai trimis Monero
+        <h2>PaymentID</h2>
+        Poți utiliza un ID de plată pentru a identifica suma trimisă între două terțe,
+	acest lucru este complet opțional și privat. Ca exemplu, poate permite identificarea
+	plății pentru un produs achiziționat.
+        <h2>TX ID</h2>
+        Acesta este ID-ul Tranzacției și poate fi folosit pentru a identifica tranzacția ta obfuscată
+	pe un explorator al bazei de date distribuită (Blockchain) a Monero, ca cel
+	de pe <a href="https://xmrchain.net/">https://xmrchain.net/</a>
+        <h2>TX KEY (Cheie Tranzacție)</h2>
+        Aceasta este cheia privată a tranzacției, care trebuie păstrată în siguranță,
+	această cheie permite unei terțe părți să dezvăluie care din semnăturile formate într-un inel
+	vă aparține, făcând astfel tranzacția transparentă.
+        <h2>Monobloc</h2>
+        Acesta este monoblocul în care a fost inclusă tranzacția ta.
+    ]]></string>
+    <string name="help_wallet"><![CDATA[
+        <h1>Portofelul</h1>
+        <h2>Mod Stradă</h2>
+        <p>Modul stradă poate fi activat/dezactivat în meniu sau la atingerea iconiței cu capul lui Gunther. În acest mod,
+        balanța nu e afișată pe niciun ecran, așă că poți utiliza portofelul în stradă, bar sau
+        alt loc public. Tranzacțiile anterioare la fel sunt ascunse. Tranzacțiile noi vor fi afișate, ca
+        să poți vizualiza scumpul Monero trimis/primit!</p>
+        <h2>Scanarea</h2>
+        Deoarece Monero păstrează lucrurile într-un mod privat, de fiecare dată când deschizi
+	portofelul Monerujo, vom scana baza de date distribuită (blockchain) pentru a vedea dacă
+	ai primit Monero în portofel, această metodă stochează doar informații relevante portofelului tău.
+	Uneori poate dura ceva timp, fiindcă portofelul n-a fost sincronizat demult.
+        <h2>Balanța</h2>
+        <p><b>Ajutor! Balanța portofelului meu a dispărut sau este neconfirmată!</b><br/>
+        Nu te panica! În momentul în care trimiți fonduri din portofelul tău, o parte din balanță
+	va fi arătată ca neconfirmată. Acest lucru se întâmplă ca urmare a modului în care este
+	schimbat Monero în baza de date distribuită și modul în care se face schimbul.
+	Citește mai multe despre schimb la adresa https://getmonero.org/resources/moneropedia/change.html
+        <h2>Listă tranzacții</h2>
+        <p>O listă a tranzacțiilor portofelului. În portofele create folosind cheia de vizualizare,
+	doar tranzacțiile primite vor fi afișate.</p>
+    ]]></string>
+    <string name="help_xmrto"><![CDATA[
+        <h1>Transfer BTC</h1>
+        <h2>SideShift.ai</h2>
+        <p>SideShift.ai este un serviciu terță parte care acționează ca un schimb valutar între Monero și Bitcoin.
+        Noi folosim API-ul SideShift.ai pentru a integra plățile Bitcoin în Monerujo. Vezi
+        https://sideshift.ai și decide singur dacă acesta este un serviciu pe care dorești să îl folosești. Echipa Monerujo
+        nu este asociată în niciun fel cu SideShift.ai și nu te poate ajuta cu serviciile oferite de ei.</p>
+        <h2>Rata de schimb a SideShift.ai<h2>
+        <p>Pe ecranul cu \"Suma\" vor fi afișați parametrii serviciului SideShift.ai. Aceștia includ cursul de
+	schimb actual, precum și limitele superioare și inferioare ale BTC. Reține că aceste rate de schimb
+	nu sunt garantate în acest moment.</p>
+        <h2>Ordin SideShift.ai<h2>
+        <p>Pe ecranul cu \"Confirm\", vei vedea ordinul actual al SideShift.ai. Acest ordin este valabil pentru
+	un timp limitat - este posibil să observi o numărătoare inversă pe butonul \"Consum\". Rata de schimb poate
+	fi diferită de cea indicată pe ecranele anterioare.</p>
+        <h2>Cheia secretă SideShift.ai<h2>
+        <p>Din moment ce Monerujo gestionează numai partea Monero din tranzacția ta, cheia secretă a SideShift.ai
+        poate fi folosită pentru a urmări partea Bitcoin a comenzii tale de pe site-ul SideShift.ai.</p>
+        <h2>Numerotarea inversă SideShift.ai</h2>
+        <p>În momentul în care numerotarea inversă ajunge la zero, va trebui să obții o nouă cotație de la SideShift.ai mergând
+	înapoi la pasul anterior, apoi revenind la ecranul \"Confirm\".</p>
+    ]]></string>
+    <string name="icon_content_description">Pictogramă de dialog</string>
+    <string name="item_view_role_description">Filă</string>
+    <string name="material_clock_toggle_content_description">Selectați ora</string>
+    <string name="material_hour_selection">Selectați ora</string>
+    <string name="material_hour_suffix">Ora %1$s</string>
+    <string name="material_minute_selection">Selectați minutele</string>
+    <string name="material_minute_suffix">%1$s minute</string>
+    <string name="material_timepicker_am">a.m.</string>
+    <string name="material_timepicker_clock_mode_description">Pentru a introduce ora, comutați la modul ceas.</string>
+    <string name="material_timepicker_hour">Ora</string>
+    <string name="material_timepicker_minute">Minut</string>
+    <string name="material_timepicker_pm">p.m.</string>
+    <string name="material_timepicker_select_time">Selectați ora</string>
+    <string name="material_timepicker_text_input_mode_description">Pentru a introduce ora, comutați la modul de introducere a textului.</string>
+    <string name="mtrl_badge_numberless_content_description">Notificare nouă</string>
+    <string name="mtrl_chip_close_icon_content_description">Eliminați %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Peste %1$d notificări noi</string>
+    <string name="mtrl_picker_a11y_next_month">Treceți la luna următoare</string>
+    <string name="mtrl_picker_a11y_prev_month">Treceți la luna anterioară</string>
+    <string name="mtrl_picker_announce_current_selection">Selecția actuală: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selectați data</string>
+    <string name="mtrl_picker_date_header_unselected">Data selectată</string>
+    <string name="mtrl_picker_day_of_week_column_header">Coloana cu zile: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Format nevalid.</string>
+    <string name="mtrl_picker_invalid_format_example">Exemplu: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Folosiți: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Interval nevalid.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigați la anul %1$s</string>
+    <string name="mtrl_picker_out_of_range">Fără acoperire: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Data de începere – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – data de încheiere</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selectați intervalul</string>
+    <string name="mtrl_picker_range_header_unselected">Data de începere – data de încheiere</string>
+    <string name="mtrl_picker_save">Salvați</string>
+    <string name="mtrl_picker_text_input_date_hint">Dată</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Data de încheiere</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Data de începere</string>
+    <string name="mtrl_picker_text_input_day_abbr">z</string>
+    <string name="mtrl_picker_text_input_month_abbr">l</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Comutați la modul introducere în calendar</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Atingeți pentru a comuta la selectarea unei zile</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Comutați la modul de introducere a textului</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Atingeți pentru a comuta la selectarea unui an</string>
+    <string name="password_toggle_content_description">Afișați parola</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Căutați"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

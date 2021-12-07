@@ -1,0 +1,3 @@
+ninja: Entering directory `C:\Users\Blockhash\StudioProjects\beldex_android_wallet\app\.cxx\RelWithDebInfo\58351t1e\x86_64'
+[1/2] Building CXX object CMakeFiles/monerujo.dir/src/main/cpp/monerujo.cpp.o
+[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\RelWithDebInfo\58351t1e\obj\x86_64\libmonerujo.so
