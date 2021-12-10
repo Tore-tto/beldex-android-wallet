@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Automatically generated file. DO NOT MODIFY -->
-
-    <!-- Value from the variant -->
-    <string name="available_locales" translatable="false">en,ar,cat,de,el,eo,es,et,fr,hu,it,ja,nb,nl,pt,pt-BR,ro,ru,sk,sr,sv,uk,v23,zh-CN,zh-TW</string>
-
-</resources>
