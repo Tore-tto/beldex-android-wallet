@@ -290,7 +290,7 @@ public class Node {
         if (DEFAULT_RPC_PORT > 0) return DEFAULT_RPC_PORT;
         switch (WalletManager.getInstance().getNetworkType()) {
             case NetworkType_Mainnet:
-                DEFAULT_RPC_PORT = 29095;
+                DEFAULT_RPC_PORT = 19091;
                 break;
             case NetworkType_Testnet:
                 DEFAULT_RPC_PORT = 29091;

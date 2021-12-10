@@ -23,12 +23,6 @@ import lombok.Getter;
 
 @AllArgsConstructor
 public enum DefaultNodes {
-    BELDEX6("mainnet.beldex.io:29095"),
-    BELDEX5("publicnode5.rpcnode.stream:29095"),
-    BELDEX1("publicnode1.rpcnode.stream:29095"),
-    BELDEX2 ("publicnode2.rpcnode.stream:29095"),
-    BELDEX3 ("publicnode3.rpcnode.stream:29095"),
-    BELDEX4("publicnode4.rpcnode.stream:29095"),
     BELDEX("explorer.beldex.io:19091");
 
 //    MONERUJO("nodex.monerujo.io:18081"),
