@@ -6,8 +6,8 @@ MONERO_SRC_DIR=${WORKDIR}/beldex-master-new-code-for-android-build
 CMAKE_TOOLCHAIN_FILE="${ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
 # git clone https://github.com/Beldex-Coin/beldex ${MONERO_SRC_DIR} --branch ${MONERO_BRANCH} --recursive --depth=1
 cd $MONERO_SRC_DIR
-git apply androidbuild.diff # do this once
-
+git apply /opt/android/Beldex_Wallet/scripts/androidbuild.diff # do this once
+echo "please comment out git apply androidbuild.diff if this is done"
 for arch in "aarch" "aarch64" "i686" "x86_64"
 do
 FLAGS=""
@@ -45,7 +45,7 @@ case $arch in
 		BUILD_64=OFF
 		BUILD_32=ON
 		TAG="android-x86"
-		ARCH="x86"
+		ARCH="i686"
 		ARCH_ABI="x86";;
 	"x86_64"	)  
 		ANDROID_CLANG=x86_64-linux-androideabi${API}-clang
