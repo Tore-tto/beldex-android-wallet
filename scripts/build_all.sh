@@ -1,13 +1,11 @@
 #!/bin/sh
 
 . ./config.sh
-MONERO_BRANCH=android_build
-MONERO_SRC_DIR=${WORKDIR}/beldex-master-new-code-for-android-build
+BELDEX_BRANCH=android
+BELDEX_SRC_DIR=${WORKDIR}/beldex-android-build
 CMAKE_TOOLCHAIN_FILE="${ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
-# git clone https://github.com/Beldex-Coin/beldex ${MONERO_SRC_DIR} --branch ${MONERO_BRANCH} --recursive --depth=1
-cd $MONERO_SRC_DIR
-git apply /opt/android/Beldex_Wallet/scripts/androidbuild.diff # do this once
-echo "please comment out git apply androidbuild.diff if this is done"
+# git clone https://github.com/Beldex-Coin/beldex ${BELDEX_SRC_DIR} --branch ${BELDEX_BRANCH} --recursive --depth=1
+cd $BELDEX_SRC_DIR
 for arch in "aarch" "aarch64" "i686" "x86_64"
 do
 FLAGS=""
@@ -57,7 +55,7 @@ case $arch in
 		ARCH_ABI="x86_64";;
 esac
 
-cd $MONERO_SRC_DIR
+cd $BELDEX_SRC_DIR
 rm -rf ./build/release
 mkdir -p ./build/release
 export PKG_CONFIG_PATH="/usr/include/lib/pkgconfig"
@@ -84,14 +82,13 @@ cd ./build/release
     -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true \
     ${FLAGS} ../..
 
-make wallet_api -j2
-make wallet_merged -j2
+make wallet_api -j4
+make wallet_merged -j4
 
-mkdir -p ${PREFIX}/lib
 mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
 mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include/
-cp -vf ${MONERO_SRC_DIR}/build/release/src/wallet/api/libwallet_merged.a /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
-cp -rvf ${MONERO_SRC_DIR}/build/release/static-deps/include/* /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include
+cp -vf ${BELDEX_SRC_DIR}/build/release/src/wallet/api/libwallet_merged.a /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
+#cp -rvf ${BELDEX_SRC_DIR}/build/release/static-deps/include/* /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include
 
 
 done

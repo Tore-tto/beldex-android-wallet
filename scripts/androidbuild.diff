@@ -162,7 +162,7 @@ index 093d88ac9..b92484d9d 100755
  
  EXPORT
 diff --git a/src/wallet/api/wallet.cpp b/src/wallet/api/wallet.cpp
-index 26bc1fe4b..86de9debe 100755
+index 26bc1fe4b..bacde20eb 100755
 --- a/src/wallet/api/wallet.cpp
 +++ b/src/wallet/api/wallet.cpp
 @@ -1064,7 +1064,12 @@ uint64_t WalletImpl::balance(uint32_t accountIndex) const
@@ -173,39 +173,12 @@ index 26bc1fe4b..86de9debe 100755
 +    std::optional<uint8_t> hf_version = m_wallet->get_hard_fork_version();
 +    if (!hf_version)
 +    {
-+        *hf_version = ::cryptonote::network_version_17_POS;
++        return 0;
 +    }
 +    return m_wallet->unlocked_balance(accountIndex, false,NULL,NULL,*hf_version);
  }
  
  EXPORT
-@@ -1589,14 +1594,8 @@ PendingTransaction *WalletImpl::createTransactionMultDest(const std::vector<std:
-             setStatusError(tr("failed to set up payment id, though it was decoded correctly"));
-             break;
-         }
--        try {
--            std::optional<uint8_t> hf_version = m_wallet->get_hard_fork_version();
--            if (!hf_version)
--            {
--              setStatusError(tools::ERR_MSG_NETWORK_VERSION_QUERY_FAILED);
--              return transaction;
--            }
--        }
-+
-+
-         if (error) {
-             break;
-         }
-@@ -1608,8 +1607,7 @@ PendingTransaction *WalletImpl::createTransactionMultDest(const std::vector<std:
-             std::optional<uint8_t> hf_version = m_wallet->get_hard_fork_version();
-             if (!hf_version)
-             {
--              setStatusError(tools::ERR_MSG_NETWORK_VERSION_QUERY_FAILED);
--              return transaction;
-+                *hf_version = ::cryptonote::network_version_17_POS;
-             }
- 
-             if (amount) {
 diff --git a/src/wallet/api/wallet2_api.h b/src/wallet/api/wallet2_api.h
 index 0e490011d..a08c03111 100755
 --- a/src/wallet/api/wallet2_api.h
@@ -219,22 +192,3 @@ index 0e490011d..a08c03111 100755
  
      virtual StakeUnlockResult* canRequestStakeUnlock(const std::string &mn_key) = 0;
  
-diff --git a/src/wallet/wallet2.h b/src/wallet/wallet2.h
-index 0b9fde8c6..f99316917 100755
---- a/src/wallet/wallet2.h
-+++ b/src/wallet/wallet2.h
-@@ -1068,7 +1068,13 @@ private:
-     const transfer_details &get_transfer_details(size_t idx) const;
- 
-     void get_hard_fork_info (uint8_t version, uint64_t &earliest_height) const;
--    std::optional<uint8_t> get_hard_fork_version() const { return m_node_rpc_proxy.get_hardfork_version(); }
-+    std::optional<uint8_t> get_hard_fork_version() const {
-+        //std::optional<uint8_t> hf_version= m_node_rpc_proxy.get_hardfork_version();
-+        //if (!hf_version){
-+        //std::optional<uint8_t> hf_version = ::cryptonote::network_version_17_POS;
-+        //}
-+        return  ::cryptonote::network_version_17_POS;
-+    }
-     bool use_fork_rules(uint8_t version, uint64_t early_blocks = 0) const;
- 
-     const fs::path& get_wallet_file() const;
