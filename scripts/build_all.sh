@@ -4,7 +4,8 @@
 BELDEX_BRANCH=android
 BELDEX_SRC_DIR=${WORKDIR}/beldex-android-build
 CMAKE_TOOLCHAIN_FILE="${ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake"
-# git clone https://github.com/Beldex-Coin/beldex ${BELDEX_SRC_DIR} --branch ${BELDEX_BRANCH} --recursive --depth=1
+rm -rf $BELDEX_SRC_DIR
+git clone https://github.com/Beldex-Coin/beldex ${BELDEX_SRC_DIR} --branch ${BELDEX_BRANCH} --recursive --depth=1
 cd $BELDEX_SRC_DIR
 for arch in "aarch" "aarch64" "i686" "x86_64"
 do
@@ -88,6 +89,7 @@ make wallet_merged -j4
 mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
 mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include/
 cp -vf ${BELDEX_SRC_DIR}/build/release/src/wallet/api/libwallet_merged.a /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
+
 #cp -rvf ${BELDEX_SRC_DIR}/build/release/static-deps/include/* /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include
 
 
