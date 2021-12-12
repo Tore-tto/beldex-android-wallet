@@ -14,19 +14,19 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 30
     buildToolsVersion '30.0.3'
-    ndkVersion '21.3.6528147'
+    ndkVersion '20.1.5948944'
     defaultConfig {
         //applicationId "com.m2049r.xmrwallet"
         applicationId "com.beldex.beldex_bdx_wallet"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 3
-        versionName "1.0.2 'Feng Huang'" //29-10-2021 version code 10 and version name 1.0.0 'Feng Huang'
+        versionCode 4
+        versionName "4.0.0 'Bucephalus'" //29-10-2021 version code 10 and version name 1.0.0 'Feng Huang'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags "-std=c++11"
-                arguments '-DANDROID_STL=c++_shared'
+                cppFlags "-std=c++17"
+                //arguments '-DANDROID_STL=c++_shared'
             }
         }
     }
