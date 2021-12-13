@@ -168,6 +168,7 @@ public class Wallet {
     private native String getAddressJ(int accountIndex, int addressIndex);
 
     public Subaddress getSubaddressObject(int accountIndex, int subAddressIndex) {
+        Timber.d("getSubaddressObject - constructor is not correct, TODO!");
         return new Subaddress(accountIndex, subAddressIndex,
                 getSubaddress(subAddressIndex), getSubaddressLabel(subAddressIndex));
     }
@@ -181,6 +182,7 @@ public class Wallet {
                 amount += info.amount;
             }
         }
+        Timber.d("getSubaddressObject - setAmount is not correct, TODO!");
         subaddress.setAmount(amount);
         return subaddress;
     }

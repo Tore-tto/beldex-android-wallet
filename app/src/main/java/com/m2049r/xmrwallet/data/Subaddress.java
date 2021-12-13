@@ -23,6 +23,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import timber.log.Timber;
 
 @RequiredArgsConstructor
 @ToString
@@ -60,4 +61,6 @@ public class Subaddress implements Comparable<Subaddress> {
         else
             return label;
     }
+
+
 }

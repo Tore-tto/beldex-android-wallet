@@ -29,20 +29,12 @@ public class PendingTx {
     final public long txCount;
 
     public PendingTx(PendingTransaction pendingTransaction) {
-        Timber.d("PendingTx before getStatus");
         status = pendingTransaction.getStatus();
-        Timber.d("PendingTx before getErrorString");
         error = pendingTransaction.getErrorString();
-        Timber.d("PendingTx before getAmount");
         amount = pendingTransaction.getAmount();
-        Timber.d("PendingTx before getDust");
         dust = pendingTransaction.getDust();
-        Timber.d("PendingTx before getFee");
         fee = pendingTransaction.getFee();
-        Timber.d("PendingTx before getFirstTxId");
         txId = pendingTransaction.getFirstTxId();
-        Timber.d("PendingTx before getTxCount");
         txCount = pendingTransaction.getTxCount();
-        Timber.d("PendingTx after getTxCount");
     }
 }

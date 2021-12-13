@@ -50,7 +50,7 @@ case $arch in
 		ANDROID_CLANG=x86_64-linux-androideabi${API}-clang
 		ANDROID_CLANGPP=x86_64-linux-androideabi${API}-clang++
 		BUILD_64=ON
-		BUILD_32=ON
+		BUILD_32=OFF
 		TAG="android-x86_64"
 		ARCH="x86-64"
 		ARCH_ABI="x86_64";;
@@ -87,7 +87,6 @@ make wallet_api -j4
 make wallet_merged -j4
 
 mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
-mkdir -p /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include/
 cp -vf ${BELDEX_SRC_DIR}/build/release/src/wallet/api/libwallet_merged.a /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/lib/
 
 #cp -rvf ${BELDEX_SRC_DIR}/build/release/static-deps/include/* /opt/android/Beldex_Wallet/external-libs/${ARCH_ABI}/include
