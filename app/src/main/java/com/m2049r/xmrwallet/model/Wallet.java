@@ -354,6 +354,7 @@ public class Wallet {
                                 accountIndex) :
                         createTransactionJ(dst_addr, "", amount, mixin_count, _priority,
                                 accountIndex));
+        Timber.d("after createTransaction createTransactionJ:" + txHandle);
         pendingTransaction = new PendingTransaction(txHandle);
         return pendingTransaction;
     }

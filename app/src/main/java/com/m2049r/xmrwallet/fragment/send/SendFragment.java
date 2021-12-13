@@ -484,14 +484,19 @@ public class SendFragment extends Fragment
     // callbacks from send service
 
     public void onTransactionCreated(final String txTag, final PendingTransaction pendingTransaction) {
+        Timber.d("before getSendConfirm");
         final SendConfirm confirm = getSendConfirm();
+
         if (confirm != null) {
+            Timber.d("before PendingTx");
             pendingTx = new PendingTx(pendingTransaction);
+            Timber.d("before confirm.transactionCreated");
             confirm.transactionCreated(txTag, pendingTransaction);
         } else {
             // not in confirm fragment => dispose & move on
             disposeTransaction();
         }
+        Timber.d("after onTransactionCreated");
     }
 
     @Override
@@ -518,6 +523,7 @@ public class SendFragment extends Fragment
         if (fragment instanceof SendConfirm) {
             return (SendConfirm) fragment;
         } else {
+            Timber.d("getSendConfirm FAILED: no Fragment SpendPagerAdapter.POS_CONFIRM");
             return null;
         }
     }

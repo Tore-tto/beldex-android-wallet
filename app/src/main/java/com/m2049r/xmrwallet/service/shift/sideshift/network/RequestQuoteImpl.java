@@ -101,7 +101,7 @@ class RequestQuoteImpl implements RequestQuote {
     /**
      * Create JSON request object
      *
-     * @param xmrAmount how much XMR to shift to BTC
+     * @param btcAmount how much XMR to shift to BTC
      */
 
     static JSONObject createRequest(final double btcAmount) throws JSONException {

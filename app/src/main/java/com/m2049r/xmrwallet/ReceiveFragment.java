@@ -314,7 +314,7 @@ public class ReceiveFragment extends Fragment implements OnBackPressedListener {
     }
 
     void copyAddress() {
-        Helper.clipBoardCopy(Objects.requireNonNull(getActivity()), getString(R.string.label_copy_address), subaddress.getAddress());
+        Helper.clipBoardCopy(requireActivity(), getString(R.string.label_copy_address), subaddress.getAddress());
         Toast.makeText(getActivity(), getString(R.string.message_copy_address), Toast.LENGTH_SHORT).show();
     }
 

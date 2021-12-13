@@ -552,6 +552,7 @@ Java_com_m2049r_xmrwallet_model_Wallet_getStatusJ(JNIEnv *env, jobject instance)
     Wallet::Wallet *wallet = getHandle<Wallet::Wallet>(env, instance);
     auto stat = wallet->status();
     auto& [status, errorString] = stat;
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_getStatusJ:%d  %s",status,errorString.c_str());
     return status;
 }
 
@@ -570,7 +571,7 @@ Java_com_m2049r_xmrwallet_model_Wallet_statusWithErrorString(JNIEnv *env, jobjec
 
     auto stat = wallet->status();
     auto& [status, errorString] = stat;
-
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_statusWithErrorString:%d  %s",status,errorString.c_str());
     return newWalletStatusInstance(env, status, errorString);
 }
 JNIEXPORT jboolean JNICALL
@@ -665,7 +666,7 @@ Java_com_m2049r_xmrwallet_model_Wallet_initJ(JNIEnv *env, jobject instance,
     Wallet::Wallet *wallet = getHandle<Wallet::Wallet>(env, instance);
     bool status = wallet->init(_daemon_address, (uint64_t) upper_transaction_size_limit,
                                _daemon_username,
-                               _daemon_password);
+                               _daemon_password,false,false);
     env->ReleaseStringUTFChars(daemon_address, _daemon_address);
     env->ReleaseStringUTFChars(daemon_username, _daemon_username);
     env->ReleaseStringUTFChars(daemon_password, _daemon_password);
@@ -908,12 +909,16 @@ Java_com_m2049r_xmrwallet_model_Wallet_createTransactionJ(JNIEnv *env, jobject i
     Wallet::Wallet *wallet = getHandle<Wallet::Wallet>(env, instance);
     uint32_t subaddr_account = accountIndex;
     std::set<uint32_t> subaddr_indices = {};
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_createTransactionJ before createTransaction");
     Wallet::PendingTransaction *tx = wallet->createTransaction(_dst_addr,
                                                                amount,
                                                                priority,
                                                                subaddr_account,
                                                                subaddr_indices);
-
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_createTransactionJ after createTransaction");
+    if (!tx){
+        LOGD("No TX pointer found");
+    }
     env->ReleaseStringUTFChars(dst_addr, _dst_addr);
     env->ReleaseStringUTFChars(payment_id, _payment_id);
     return reinterpret_cast<jlong>(tx);
@@ -1248,13 +1253,22 @@ Java_com_m2049r_xmrwallet_model_PendingTransaction_getStatusJ(JNIEnv *env, jobje
     Wallet::PendingTransaction *tx = getHandle<Wallet::PendingTransaction>(env, instance);
     auto stat = tx->status();
     auto& [status, errorString] = stat;
+    LOGD("Java_com_m2049r_xmrwallet_model_PendingTransaction_getStatusJ status:%d %s",status, errorString.c_str());
     return status;
 }
 
 JNIEXPORT jstring JNICALL
 Java_com_m2049r_xmrwallet_model_PendingTransaction_getErrorString(JNIEnv *env, jobject instance) {
     Wallet::PendingTransaction *tx = getHandle<Wallet::PendingTransaction>(env, instance);
-    return env->NewStringUTF(tx->status().second.c_str());
+    jstring result;
+    if (tx){
+        result = env->NewStringUTF(tx->status().second.c_str());
+        LOGD("Java_com_m2049r_xmrwallet_model_PendingTransaction_getErrorString result:%s",result);
+    }
+    else {
+        result = (jstring) "Java_com_m2049r_xmrwallet_model_PendingTransaction_getErrorString no TX";
+    }
+    return result;
 }
 
 // commit transaction or save to file if filename is provided.
@@ -1266,7 +1280,12 @@ Java_com_m2049r_xmrwallet_model_PendingTransaction_commit(JNIEnv *env, jobject i
 
     Wallet::PendingTransaction *tx = getHandle<Wallet::PendingTransaction>(env, instance);
     bool success = tx->commit(_filename, overwrite);
-
+    if (success) {
+        LOGD("TX commit success");
+    }else{
+        LOGD("TX commit failed");
+    };
+    LOGD("TX commit success==%d",success);
     env->ReleaseStringUTFChars(filename, _filename);
     return static_cast<jboolean>(success);
 }
@@ -1274,8 +1293,12 @@ Java_com_m2049r_xmrwallet_model_PendingTransaction_commit(JNIEnv *env, jobject i
 
 JNIEXPORT jlong JNICALL
 Java_com_m2049r_xmrwallet_model_PendingTransaction_getAmount(JNIEnv *env, jobject instance) {
+    LOGD("before Java_com_m2049r_xmrwallet_model_PendingTransaction_getAmount()");
     Wallet::PendingTransaction *tx = getHandle<Wallet::PendingTransaction>(env, instance);
-    return tx->amount();
+    if(!tx){LOGE("No PendingTransaction");}
+    jlong amount = tx->amount();
+    LOGD("after Java_com_m2049r_xmrwallet_model_PendingTransaction_getAmount()");
+    return amount;
 }
 
 JNIEXPORT jlong JNICALL
@@ -1481,3 +1504,32 @@ int LedgerFind(char *buffer, size_t len) {
 #ifdef __cplusplus
 }
 #endif
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_m2049r_xmrwallet_model_Wallet_getDefaultMixin(JNIEnv *env, jobject thiz) {
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_getDefaultMixin not implemented returning default 0");
+    return 0;
+}
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_m2049r_xmrwallet_model_Wallet_setDefaultMixin(JNIEnv *env, jobject thiz, jint mixin) {
+    LOGD("Java_com_m2049r_xmrwallet_model_Wallet_setDefaultMixin not implemented (%d)",mixin);
+}
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_m2049r_xmrwallet_model_WalletManager_moneroVersion(JNIEnv *env, jclass clazz) {
+    jstring version = (jstring) "";
+    LOGD("wallet Java_com_m2049r_xmrwallet_model_WalletManager_moneroVersion not implemented");
+    return version;
+}
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_m2049r_xmrwallet_model_PendingTransaction_getErrorStringJ(JNIEnv *env, jobject instance) {
+    LOGD("Java_com_m2049r_xmrwallet_model_PendingTransaction_getErrorStringJ");
+    Wallet::PendingTransaction *tx = getHandle<Wallet::PendingTransaction>(env, instance);
+    auto stat = tx->status();
+    auto& [status, errorString] = stat;
+    return env->NewStringUTF(errorString.c_str());
+}

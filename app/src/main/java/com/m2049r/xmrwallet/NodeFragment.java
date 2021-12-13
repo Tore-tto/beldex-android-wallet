@@ -221,7 +221,7 @@ public class NodeFragment extends Fragment
             activityCallback.setNode(nodeItem); // this marks it as selected & saves it as well
             nodeItem.setSelecting(false);
             try {
-                Objects.requireNonNull(getActivity()).runOnUiThread(() -> nodesAdapter.allowClick(true));
+                requireActivity().runOnUiThread(() -> nodesAdapter.allowClick(true));
             } catch (NullPointerException ex) {
                 // it's ok
             }

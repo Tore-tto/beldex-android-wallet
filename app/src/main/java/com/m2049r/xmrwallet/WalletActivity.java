@@ -692,11 +692,14 @@ public class WalletActivity extends BaseActivity implements WalletFragment.Liste
             runOnUiThread(() -> {
                 dismissProgressDialog();
                 PendingTransaction.Status status = pendingTransaction.getStatus();
+                Timber.d("onTransactionCreated:" + status);
                 if (status != PendingTransaction.Status.Status_Ok) {
+                    Timber.d("onTransactionCreated not Status_Ok");
                     String errorText = pendingTransaction.getErrorString();
                     getWallet().disposePendingTransaction();
                     sendFragment.onCreateTransactionFailed(errorText);
                 } else {
+                    Timber.d("onTransactionCreated Status_Ok");
                     sendFragment.onTransactionCreated(txTag, pendingTransaction);
                 }
             });
@@ -985,6 +988,7 @@ public class WalletActivity extends BaseActivity implements WalletFragment.Liste
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Timber.d("onRequestPermissionsResult()");
         if (requestCode == Helper.PERMISSIONS_REQUEST_CAMERA) { // If request is cancelled, the result arrays are empty.
             if (grantResults.length > 0

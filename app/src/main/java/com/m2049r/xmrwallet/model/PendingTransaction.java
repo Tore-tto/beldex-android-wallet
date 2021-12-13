@@ -16,6 +16,8 @@
 
 package com.m2049r.xmrwallet.model;
 
+import timber.log.Timber;
+
 public class PendingTransaction {
     static {
         System.loadLibrary("monerujo");
@@ -68,12 +70,23 @@ public class PendingTransaction {
     }
 
     public Status getStatus() {
-        return Status.values()[getStatusJ()];
+        int status = getStatusJ();
+        if (status == 0) return Status.Status_Ok;
+        if (status == 1) return Status.Status_Error;
+        return Status.Status_Critical;
+
     }
 
     public native int getStatusJ();
 
-    public native String getErrorString();
+
+    public String getErrorString() {
+        Timber.d("PendingTransaction before getErrorStringJ");
+        String error = getErrorStringJ();
+        Timber.d("PendingTransaction getErrorString:" + error);
+        return error;
+    }
+    public native String getErrorStringJ();
 
     // commit transaction or save to file if filename is provided.
     public native boolean commit(String filename, boolean overwrite);

@@ -17,9 +17,10 @@
 package com.m2049r.xmrwallet.data;
 
 import com.m2049r.xmrwallet.model.PendingTransaction;
+import timber.log.Timber;
 
 public class PendingTx {
-    final public PendingTransaction.Status status;
+    public PendingTransaction.Status status;
     final public String error;
     final public long amount;
     final public long dust;
@@ -28,12 +29,20 @@ public class PendingTx {
     final public long txCount;
 
     public PendingTx(PendingTransaction pendingTransaction) {
+        Timber.d("PendingTx before getStatus");
         status = pendingTransaction.getStatus();
+        Timber.d("PendingTx before getErrorString");
         error = pendingTransaction.getErrorString();
+        Timber.d("PendingTx before getAmount");
         amount = pendingTransaction.getAmount();
+        Timber.d("PendingTx before getDust");
         dust = pendingTransaction.getDust();
+        Timber.d("PendingTx before getFee");
         fee = pendingTransaction.getFee();
+        Timber.d("PendingTx before getFirstTxId");
         txId = pendingTransaction.getFirstTxId();
+        Timber.d("PendingTx before getTxCount");
         txCount = pendingTransaction.getTxCount();
+        Timber.d("PendingTx after getTxCount");
     }
 }
