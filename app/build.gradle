@@ -16,7 +16,6 @@ android {
     buildToolsVersion '30.0.3'
     ndkVersion '20.1.5948944'
     defaultConfig {
-        //applicationId "com.m2049r.xmrwallet"
         applicationId "com.beldex.beldex_bdx_wallet"
         minSdkVersion 21
         targetSdkVersion 30

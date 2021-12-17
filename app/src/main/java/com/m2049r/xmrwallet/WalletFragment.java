@@ -45,6 +45,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 import com.google.android.material.transition.MaterialElevationScale;
+import com.m2049r.xmrwallet.dialog.ProgressDialog;
 import com.m2049r.xmrwallet.layout.TransactionInfoAdapter;
 import com.m2049r.xmrwallet.model.TransactionInfo;
 import com.m2049r.xmrwallet.model.Wallet;
@@ -83,7 +84,7 @@ public class WalletFragment extends Fragment
     private Drawable streetGunther = null;
     RecyclerView txlist;
     FrameLayout frameLayout;
-
+    private ProgressDialog progressDialog;
 
     private TextView tvWalletName;
     private TextView tvWalletAccountStatus;
@@ -233,6 +234,9 @@ public class WalletFragment extends Fragment
         }
 
         activityCallback.forceUpdate();
+
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Please wait...");
 
         return view;
     }
@@ -414,6 +418,7 @@ public class WalletFragment extends Fragment
         if (!activityCallback.isWatchOnly()) {
             bSend.setVisibility(View.VISIBLE);
             bSend.setEnabled(true);
+            progressDialog.dismiss();
         }
         if (isVisible()) enableAccountsList(true); //otherwise it is enabled in onResume()
     }
@@ -422,6 +427,7 @@ public class WalletFragment extends Fragment
         if (!activityCallback.isWatchOnly()) {
             bSend.setVisibility(View.INVISIBLE);
             bSend.setEnabled(false);
+            progressDialog.show();
         }
         if (isVisible()) enableAccountsList(false); //otherwise it is enabled in onResume()
         firstBlock = 0;

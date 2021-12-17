@@ -505,7 +505,7 @@ public class WalletService extends Service {
             listener.start();
             showProgress(100);
         }
-        showProgress(getString(R.string.status_wallet_connecting));
+        showProgress("Syncing blocks..., this may takes few minutes");
         showProgress(101);
         // if we try to refresh the history here we get occasional segfaults!
         // doesnt matter since we update as soon as we get a new block anyway
