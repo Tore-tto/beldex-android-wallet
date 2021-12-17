@@ -7,6 +7,8 @@ if (keystorePropertiesFile.exists()) {
 //version code 2 and version name 1.0.1 'Feng Huang' Internal Test Release Date 10-11-2021
 //version code 3 and version name 1.0.2 'Feng Huang' Internal Test Release Date 10-11-2021
 //version code 3 and version name 1.0.2 'Feng Huang' Release Date 11-11-2021
+//version code 4 and version name 2.0.0 'Bucephalus' Release Date 14-12-2021
+//version code 5 and version name 2.0.1 'Bucephalus' Release Date 16-11-2021
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
@@ -19,8 +21,8 @@ android {
         applicationId "com.beldex.beldex_bdx_wallet"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 4
-        versionName "4.0.0 'Bucephalus'" //29-10-2021 version code 10 and version name 1.0.0 'Feng Huang'
+        versionCode 5
+        versionName "2.0.1 'Bucephalus'" //29-10-2021 version code 10 and version name 1.0.0 'Feng Huang'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
